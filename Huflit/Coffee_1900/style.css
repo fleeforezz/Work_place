@@ -145,6 +145,7 @@ li:hover .dropdown-content-product {
 
 .dropdown-product-item {
     display: flex;
+    flex-wrap: nowrap;
 }
 .dropdown-product-item-child {
     text-align: center;
@@ -162,7 +163,6 @@ li:hover .dropdown-content-product {
 }
 .dropdown-content-about a {
     display: block;
-    transition: 200ms;
 }
 .dropdown-content-about a:hover {
     opacity: 100%;
@@ -308,6 +308,7 @@ li:hover .dropdown-content-about {
 .footer-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .footer-column {
     margin-right: 60px;
@@ -329,7 +330,6 @@ li:hover .dropdown-content-about {
 
 .community {
     display: flex;
-    flex-wrap: nowrap;
     margin-right: 15px;
 }
 #community-icon-face {
@@ -355,6 +355,7 @@ li:hover .dropdown-content-about {
 }
 .contact-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #686057;
