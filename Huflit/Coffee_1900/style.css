@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #faebd7;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #504a43;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #686057;
+}
+
+/*! COFFEE SHOP HEAD */
+
+.navigation-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #faebd7;
+    z-index: 1;
+}
+
+.logo {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width:5%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.logo h1 {
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #504a43;
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #686057;
+    text-align: center;
+    padding: 0.4em 0.9em;
+}
+.nav {
+    text-transform: uppercase;
+    transition: 250ms ;
+}
+.nav:hover {
+    background-color: #504a43;
+}
+li a.active {
+    color: white;
+    background-color: #504a43;
+}
+li a.active:hover {
+    opacity: 90%;
+}
+
+li a:hover {
+    background-color: #504a43;
+    color: white;
+}
+
+li.dropdown-content {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebebeb;
+    min-width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    transition: 200ms;
+}
+.dropdown-content a:hover {
+    opacity: 100%;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content-product {
+    display: none;
+    position: absolute;
+    background-color: #ebebeb;
+    min-width: 160px;
+}
+.dropdown-content-product a {
+    display: block;
+    transition: 200ms;
+}
+.dropdown-content-product a:hover {
+    opacity: 100%;
+}
+li:hover .dropdown-content-product {
+    display: block;
+    position: absolute;
+    padding-left: 250px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    margin-left: -400px;
+}
+
+.dropdown-product-item {
+    display: flex;
+}
+.dropdown-product-item-child {
+    text-align: center;
+    margin-right: 150px;
+}
+.dropdown-product-item-child h3 {
+    text-transform: uppercase;
+}
+
+.dropdown-content-about {
+    display: none;
+    position: absolute;
+    background-color: #ebebeb;
+    min-width: 160px;
+}
+.dropdown-content-about a {
+    display: block;
+    transition: 200ms;
+}
+.dropdown-content-about a:hover {
+    opacity: 100%;
+}
+li:hover .dropdown-content-about {
+    display: block;
+    position: absolute;
+    padding-left: 300px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    margin-left: -470px;
+}
+.dropdown-about-item {
+    display: flex;
+}
+.dropdown-about-item-child {
+    text-align: center;
+    margin-right: 140px;
+    margin-left: -25px;
+}
+.dropdown-about-item-child h3{
+    text-transform: uppercase;
+}
+
+/*! COFFEE SHOP SECTION */
+
+.poster {
+    width: 100%;
+}
+
+.glass-coffee {
+    padding: 8em;
+}
+.glass-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.glass-row {
+    display: flex;
+    font-size: 1.3rem;
+}
+.glass-row img {
+    margin-left: 250px;
+    width: 60%;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+    transform: rotate(5deg);
+}
+.glass-row p {
+    font-weight: 500;
+}
+.glass-row a {
+    font-weight: 600;
+    color: black;
+}
+.glass-column {
+    width: 80%;
+    max-width: 80%;
+}
+
+.cooperation {
+    padding: 8em;
+}
+.cooperation-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.cooperation-row {
+    display: flex;
+    font-size: 1.3rem;
+}
+.cooperation-row img {
+    width: 80%;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+    transform: rotate(-5deg);
+}
+.cooperation-row p {
+    font-weight: 500;
+}
+.cooperation-row a {
+    font-weight: 600;
+    color: black;
+}
+.cooperation-column {
+    width: 70%;
+    max-width: 70%;
+}
+
+.login-form-container label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #504a43;
+}
+
+.login-form-container input {
+    padding: 10px 30px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.login-form-container input:hover {
+    border: none;
+}
+
+.login-form-container button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.login-form-container button:hover {
+    opacity: 80%;
+    background-color: #bebebe;
+}
+
+.login-form-container form {
+    font-size: 0.9em;
+}
+.login-form-container form a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+/*! COFFEE SHOP FOOTER */
+
+.separate {
+    padding: 25px;
+    background-color: #ebebeb;
+}
+
+.footer {
+    padding: 6.8em;
+}
+.footer-parent {
+    width: 100%;
+    max-width: 1300px;
+}
+.footer-row {
+    display: flex;
+    flex-direction: row;
+}
+.footer-column {
+    margin-right: 60px;
+}
+.footer-column h3 {
+    text-transform: uppercase;
+}
+.footer-column a {
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer-column a:hover {
+    opacity: 70%;
+}
+
+.community {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+}
+#community-icon-face {
+    margin-right: 13px;
+    transition: 300ms;
+}
+#community-icon-face:hover {
+    opacity: 70%;
+}
+#community-icon-insta {
+    margin-right: 13px;
+    transition: 300ms;
+}
+#community-icon-insta:hover {
+    opacity: 70%;
+}
+#community-icon-youtube {
+    margin-right: 13px;
+    transition: 300ms;
+}
+#community-icon-youtube:hover {
+    opacity: 70%;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #686057;
+}
+.contact-column {
+    display: inline-flex;
+}
+.contact-column-child {
+    transition: 300ms;
+}
+.contact-column-child:hover, #contact-column-link:hover, #contact-column-link-icon:hover {
+    opacity: 70%;
+}
+.contact-column p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    cursor: default;
+}
+.contact-column a {
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
