@@ -27,26 +27,6 @@ body {
     background-color: #686057;
 }
 
-.return-button {
-    position: absolute;
-    padding: 20px 30px;
-    color: #504a43;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: #faebd7;
-    border: none;
-    border-radius: 10px 20px;
-    box-shadow: 0px 0px 25px rgb(147, 147, 147);
-    cursor: pointer;
-    transition: padding 400ms;
-    top: 40%;
-    left: 20%;
-    transform: translate(-50%, 50%);
-}
-.return-button:hover {  
-    padding: 25px;
-}
-
 .login-form-container h1 {
     text-align: center;
 }
@@ -113,4 +93,15 @@ body {
 .login-form-container img {
     width: 50%;
     min-width: 80%;
+}
+
+.close {
+    padding: 15px 15px;
+    position: absolute;
+    right: 0em;
+    background-color: #504a43;
+    transition: 300ms;
+}
+.close:hover {
+    opacity: 80%;
 }
