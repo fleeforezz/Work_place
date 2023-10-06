@@ -136,8 +136,19 @@ section {
 }
 .section-row {
     display: flex;
-    gap: 5rem;
+    gap: 55rem;
     padding: 5rem;
+}
+.img-1 {
+    position: absolute;
+    left: 20%;
+    top: 105%;
+    z-index: -1;
+}
+.img-2 {
+    position: absolute;
+    left: 33%;
+    top: 115%;
 }
 .section-column-2 {
     width: 100%;
