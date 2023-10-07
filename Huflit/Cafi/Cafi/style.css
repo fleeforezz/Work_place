@@ -32,16 +32,16 @@ body {
     width: 3%;
     margin-right: 10px;
 }
-ul {
+header ul {
     list-style: none;
     margin-left: 40px;
 }
-li {
+header li {
     float: left;
     margin-right: 50px;
 }
 
-li a {
+header li a {
     color: var(--text-color);
     text-decoration: none;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ li a {
     transition: 250ms;
 }
 
-li a:hover {
+header li a:hover {
     color: var(--main-color);
 }
 .search-shop-signup-child {
@@ -251,4 +251,22 @@ li a:hover {
     color: #b98d58;
     background-color: transparent;
     border: 1px solid #b98d58;
+}
+
+.section-4 {
+    background-color: white;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 5em;
+    background-color: #2b1a14;
+}
+.footer-row {
+    display: flex;
+    gap: 7rem;
+}
+.footer-column-2 a + p {
+    text-decoration: none;
+    color: #b98d58;
 }
