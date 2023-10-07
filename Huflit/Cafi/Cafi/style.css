@@ -121,8 +121,8 @@ li a:hover {
     background-color: #b98d58;
 }
 
-section {
-    margin-top: 265px;
+.section-1 {
+    margin-top: 190px;
     padding: 8em;
 }
 .section-top-para {
@@ -136,19 +136,17 @@ section {
 }
 .section-row {
     display: flex;
-    gap: 55rem;
+    gap: 10rem;
     padding: 5rem;
+    max-width: 100%;
+    justify-content: center;    
 }
-.img-1 {
-    position: absolute;
-    left: 20%;
-    top: 105%;
-    z-index: -1;
+.section-column-1 {
+    display: flex;
+    flex-direction: row;
 }
 .img-2 {
-    position: absolute;
-    left: 33%;
-    top: 115%;
+    width: 100%;
 }
 .section-column-2 {
     width: 100%;
@@ -173,6 +171,83 @@ section {
     transition: 250ms;
 }
 .under-para-content-link:hover {
+    color: #b98d58;
+    background-color: transparent;
+    border: 1px solid #b98d58;
+}
+
+.section-2 {
+    padding: 3em;
+    background-color: #fff5e8;
+}
+.product-card {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.product-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.product-items a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    transition: 250ms;
+}
+.product-items a:hover {
+    opacity: 80%;
+}
+.product-items img {
+    padding: 1em;
+    background-color: white;
+}
+
+.section-3 {
+    padding: 3em;
+    background-color: white;
+}
+.services-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 9em;
+}
+.services-items {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    padding: 4em 3em;
+    border: 1px solid #a3a3a3;
+    transition: 250ms;
+}
+.services-items:hover {
+    border: 1px solid white;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+.view-our-services {
+    position: relative;
+    top: 7em;
+    left: 50em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid #b98d58;
+    color: white;
+    background-color: #b98d58;
+    transition: 250ms;
+}
+.view-our-services:hover {
     color: #b98d58;
     background-color: transparent;
     border: 1px solid #b98d58;
