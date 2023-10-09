@@ -15,11 +15,10 @@ body {
     width: 5px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #faebd7;
+    background-color: #fdf3e5;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #504a43;
-    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #686057;
@@ -289,7 +288,108 @@ li:hover .dropdown-content-about {
     text-decoration: none;
 }
 
+.product {
+    padding: 8em;
+    background-color: #faebd7;
+}
+.product-heading {
+    text-align: center;
+}
+.section-top-para {
+    font-size: 1.2rem;
+    color: #686057;
+}
+.section-next-para {
+    font-size: 2.8rem;
+}
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5em;
+}
+.product-items img {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.product-items a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.05rem;
+    transition: 250ms;
+}
+.product-items a:hover {
+    opacity: 70%;
+}
+.product-items p {
+    text-align: center;
+}
 
+.quality {
+    padding: 8em;
+}
+.quality-top-para {
+    text-align: center;
+    font-size: 2.8rem;
+}
+.quality-next-para {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #686057;
+}
+.quality-card {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10em;
+}
+.quality-items {
+    text-decoration: none;
+    color: black;
+    padding: 4em 3em;
+    border: 1px solid #a3a3a3;
+    transition: 250ms;
+    text-align: center;
+}
+.quality-items img {
+}
+.quality-items:hover {
+    border: 1px solid white;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+.view-our-services-button {
+    margin-top: 6em;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.view-our-services {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: #504a43;
+    transition: 250ms;
+}
+.view-our-services:hover {
+    color: #504a43;
+    background-color: transparent;
+    border: 1px solid #504a43;
+}
 
 /*! COFFEE SHOP FOOTER */
 
