@@ -27,171 +27,171 @@ body {
 /*! COFFEE SHOP HEAD */
 
 .navigation-bar {
-    position: fixed;
+    display: flex;
+    padding: 20px;
     width: 100%;
     background-color: #faebd7;
-    z-index: 1;
-}
-
-.logo {
-    width: 100%;
-    max-width: 50%;
-    margin: 0 auto;
-}
-.logo-container {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo img {
-    width:5%;
-    margin-top: 5px;
+.navigation-bar img {
+    width: 3%;
     margin-right: 10px;
 }
-.logo h1 {
-    margin-top: 30px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.2rem;
-    color: #504a43;
-    cursor: default;
-}
-
-ul {
+header ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
-li {
+header li {
     float: left;
+    margin-right: 50px;
 }
-
-li a {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 500;
+header li a {
+    color: #504a43;
     text-decoration: none;
-    color: #686057;
-    text-align: center;
-    padding: 0.4em 0.9em;
+    transition: 250ms;
 }
-.nav {
-    text-transform: uppercase;
-    transition: 250ms ;
-}
-.nav:hover {
+header li a.active::before {
+    content: '';
+    display: block;
+    padding: 1.5px 15px;
+    position: absolute;
+    margin-top: 20px;
     background-color: #504a43;
 }
-li a.active {
-    color: white;
-    background-color: #504a43;
-}
-li a.active:hover {
-    opacity: 90%;
-}
-
-li a:hover {
-    background-color: #504a43;
-    color: white;
-}
-
-li.dropdown-content {
-    display: inline-block;
-}
-
-.dropdown-content {
+header li a::before {
+    content: '';
     display: none;
+    padding: 1.5px 1px;
     position: absolute;
-    background-color: #ebebeb;
-    min-width: 160px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    z-index: 1;
+    margin-top: 20px;
+    background-color: #504a43;
 }
-
-.dropdown-content a {
+header li a:hover::before {
+    content: '';
     display: block;
-    transition: 200ms;
-}
-.dropdown-content a:hover {
-    opacity: 100%;
-}
-
-li:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content-product {
-    display: none;
+    padding: 1.5px 15px;
     position: absolute;
-    background-color: #ebebeb;
-    min-width: 160px;
+    margin-top: 20px;
+    background-color: #504a43;
 }
-.dropdown-content-product a {
-    display: block;
-    transition: 200ms;
-}
-.dropdown-content-product a:hover {
-    opacity: 100%;
-}
-li:hover .dropdown-content-product {
-    display: block;
-    position: absolute;
-    padding-left: 250px;
-    padding-right: 100px;
-    padding-bottom: 30px;
-    margin-left: -400px;
-}
-
-.dropdown-product-item {
+.search-shop-signup-child {
     display: flex;
-    flex-wrap: nowrap;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
 }
-.dropdown-product-item-child {
-    text-align: center;
-    margin-right: 150px;
+i {
+    transition: 250ms;
 }
-.dropdown-product-item-child h3 {
+i:hover {
+    opacity: 70%;
+}
+.signup {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
     text-transform: uppercase;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid #504a43;
+    background-color: #504a43;
+    transition: 250ms;
+    cursor: pointer;
 }
-
-.dropdown-content-about {
-    display: none;
-    position: absolute;
-    background-color: #ebebeb;
-    min-width: 160px;
+.signup:hover {
+    color: #504a43;
+    background-color: transparent;
+    border: 1px solid #504a43;
 }
-.dropdown-content-about a {
-    display: block;
-}
-.dropdown-content-about a:hover {
-    opacity: 100%;
-}
-li:hover .dropdown-content-about {
-    display: block;
-    position: absolute;
-    padding-left: 300px;
-    padding-right: 100px;
-    padding-bottom: 30px;
-    margin-left: -470px;
-}
-.dropdown-about-item {
-    display: flex;
-}
-.dropdown-about-item-child {
-    text-align: center;
-    margin-right: 140px;
-    margin-left: -25px;
-}
-.dropdown-about-item-child h3{
+.login {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
     text-transform: uppercase;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid #504a43;
+    background-color: #504a43;
+    transition: 250ms;
+    cursor: pointer;
+}
+.login:hover {
+    color: #504a43;
+    background-color: transparent;
+    border: 1px solid #504a43;
 }
 
 /*! COFFEE SHOP SECTION */
 
-.poster {
+.master-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    padding: 3em;
+    background-color: #faebd7;
+}
+.master-coffee {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-weight: 600;
     width: 100%;
 }
-
+.master-section-para {
+    width: 100%;
+    min-width: 100%;
+    opacity: 60%;
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+.discorver-us {
+    text-decoration: none;
+    color: #504a43;
+    font-size: 1.5rem;
+}
+.video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 3em;
+    background-color: #faebd7;
+}
+.quality-top-para {
+    text-align: center;
+    font-size: 2.8rem;
+}
+.quality-next-para {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #686057;
+}
+.quality-card {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7em;
+    margin-bottom: 6em;
+}
+.quality-items {
+    text-decoration: none;
+    color: black;
+    padding: 4em 3em;
+    transition: 250ms;
+    text-align: center;
+}
+.separater {
+    padding: 100px 0.5px;
+    background-color: rgb(177, 177, 177);
+}
+.quality-items:hover {
+    background-color: #e4594d;
+}
 .glass-coffee {
     padding: 8em;
 }
@@ -334,19 +334,19 @@ li:hover .dropdown-content-about {
     text-align: center;
 }
 
-.quality {
+.job {
     padding: 8em;
 }
-.quality-top-para {
+.job-top-para {
     text-align: center;
     font-size: 2.8rem;
 }
-.quality-next-para {
+.job-next-para {
     text-align: center;
     font-size: 1.05rem;
     color: #686057;
 }
-.quality-card {
+.job-card {
     display: flex;
     gap: 10rem;
     align-items: center;
@@ -354,7 +354,7 @@ li:hover .dropdown-content-about {
     flex-wrap: wrap;
     margin-top: 10em;
 }
-.quality-items {
+.job-items {
     text-decoration: none;
     color: black;
     padding: 4em 3em;
@@ -362,9 +362,7 @@ li:hover .dropdown-content-about {
     transition: 250ms;
     text-align: center;
 }
-.quality-items img {
-}
-.quality-items:hover {
+.job-items:hover {
     border: 1px solid white;
     box-shadow:  20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
