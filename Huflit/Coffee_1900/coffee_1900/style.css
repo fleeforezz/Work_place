@@ -194,6 +194,7 @@ i:hover {
     background-color: rgb(177, 177, 177);
 }
 .quality-items:hover {
+    color: white;
     background-color: #e4594d;
 }
 .glass-coffee {
