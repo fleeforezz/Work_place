@@ -50,34 +50,49 @@ header li {
     margin-right: 50px;
 }
 header li a {
+    font-weight: 500;
     color: #504a43;
     text-decoration: none;
     transition: 250ms;
 }
-header li a.active::before {
-    content: '';
-    display: block;
-    padding: 1.5px 15px;
-    position: absolute;
-    margin-top: 20px;
-    background-color: #504a43;
+header li a:hover {
+    color: #686057;
 }
-header li a::before {
-    content: '';
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
-    padding: 1.5px 1px;
     position: absolute;
-    margin-top: 20px;
-    background-color: #504a43;
+    background-color: #0f121c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
-header li a:hover::before {
-    content: '';
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 0.8rem;
     display: block;
-    padding: 1.5px 15px;
-    position: absolute;
-    margin-top: 20px;
-    background-color: #504a43;
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .search-shop-signup-child {
     display: flex;
     gap: 2rem;
@@ -85,12 +100,6 @@ header li a:hover::before {
     margin-left: 10px;
     align-items: center;
     justify-content: center;
-}
-i {
-    transition: 250ms;
-}
-i:hover {
-    opacity: 70%;
 }
 .signup {
     text-decoration: none;
@@ -148,14 +157,26 @@ i:hover {
     width: 100%;
     min-width: 100%;
     color: #6e6e6e;
-    margin-bottom: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
 }
 .discorver-us {
-    text-decoration: none;
+    text-decoration: underline;
     color: #504a43;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: italic;
     font-weight: 600;
+}
+#icon {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #e4594d;
+    transform: rotate(-40deg);
+    transition: 250ms;
+}
+#icon:hover {
+    transform: scale(1.1);
 }
 .video {
     display: block;
@@ -179,8 +200,7 @@ i:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 7em;
-    margin-bottom: 6em;
+    margin-top: 2em;
 }
 .quality-items {
     text-decoration: none;
