@@ -565,7 +565,7 @@ header li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 22rem;
+    gap: 21rem;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
