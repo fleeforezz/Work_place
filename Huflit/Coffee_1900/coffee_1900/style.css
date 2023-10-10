@@ -521,12 +521,11 @@ header li a:hover {
 
 /*! COFFEE SHOP FOOTER */
 .footer {
-    padding: 6.8em;
+    padding: 3em;
     background-color: #0f121c;
 }
 .footer-parent {
     width: 100%;
-    max-width: 1700px;
 }
 .footer-heading {
     display: flex;
