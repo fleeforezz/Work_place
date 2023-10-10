@@ -42,6 +42,8 @@ header ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-left: 240px;
+    margin-right: 250px;
 }
 header li {
     float: left;
@@ -131,27 +133,29 @@ i:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 4rem;
-    padding: 3em;
+    gap: 5rem;
     background-color: #faebd7;
+    align-items: center;
+    justify-content: center;
 }
 .master-coffee {
     text-transform: uppercase;
-    font-size: 3.4rem;
+    font-size: 6rem;
     font-weight: 600;
     width: 100%;
 }
 .master-section-para {
     width: 100%;
     min-width: 100%;
-    opacity: 60%;
-    margin-top: 65px;
+    color: #6e6e6e;
     margin-bottom: 50px;
 }
 .discorver-us {
     text-decoration: none;
     color: #504a43;
     font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
 }
 .video {
     display: block;
