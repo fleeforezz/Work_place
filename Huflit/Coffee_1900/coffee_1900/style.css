@@ -459,6 +459,7 @@ header li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 200px;
+    background-color: #f2ede0;
     border: 1px solid red;
 }
 .exquisite img {
@@ -466,6 +467,9 @@ header li a:hover {
     left: -15%;
     transform: translate(0%, -10%);
     width: 65%;
+}
+.exquisite-row {
+    margin-left: -100px;
 }
 .exquisite-column-heading-1 {
     font-size: 1.1rem;
