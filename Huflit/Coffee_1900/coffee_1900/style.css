@@ -460,7 +460,6 @@ header li a:hover {
     flex-wrap: wrap;
     margin-top: 200px;
     background-color: #f2ede0;
-    border: 1px solid red;
 }
 .exquisite img {
     position: relative;
@@ -502,7 +501,7 @@ header li a:hover {
 }
 .scroll p {
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 6em;
     font-style: italic;
     color: black;
     font-weight: bold;
