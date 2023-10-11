@@ -223,7 +223,8 @@ header li a:hover {
     background-color: #e4594d;
 }
 .glass-coffee {
-    padding: 3em;
+    padding: 8em;
+    margin-top: 30px;
 }
 .glass-parent {
     width: 100%;
@@ -233,12 +234,30 @@ header li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15rem;
+    gap: 10rem;
     align-items: center;
     justify-content: center;
 }
+.glass-img-parent {
+    width: 100%;
+    max-width: 37%;
+}
+.glass-img-parent::after {
+    content: "Chỉ có những hạt cà phê nguyên chất";
+    display: block;
+    position: absolute;
+    left: 32%;
+    margin-top: -277px;
+    padding: 80px;
+    width: 13%;
+    background-color: #efae54;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 .glass-img {
-    width: 40%;
+    width: 90%;
 }
 .glass-para-1 {
     text-transform: uppercase;
@@ -285,48 +304,11 @@ header li a:hover {
     top: auto;
     left: 100%;
     z-index: 1;
-    transform: translate(-100%, 1%);
-}
-
-.login-form-container label {
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: #504a43;
-}
-
-.login-form-container input {
-    padding: 10px 30px;
-    border: none;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.login-form-container input:hover {
-    border: none;
-}
-
-.login-form-container button {
-    border: none;
-    width: 100%;
-    padding: 10px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.login-form-container button:hover {
-    opacity: 80%;
-    background-color: #bebebe;
-}
-
-.login-form-container form {
-    font-size: 0.9em;
-}
-.login-form-container form a {
-    color: blue;
-    text-decoration: none;
+    transform: translate(-100%, -40%);
 }
 
 .product {
-    margin-top: 50px;
+    margin-top: -50px;
     padding: 5em;
 }
 .product-heading {
@@ -392,19 +374,17 @@ header li a:hover {
 .product-items p {
     text-align: center;
 }
-/* .honor-parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.honor {
+    padding: 3em;
 }
-
 .honor-row {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 3em;
-    border: 1px solid red;
+    justify-content: center;
+}
+.honor-column-heading {
+    width: 100%;
+    max-width: 35%;
 }
 .honor-heading-1 {
     font-size: 1.1rem;
@@ -419,18 +399,45 @@ header li a:hover {
     margin-bottom: -40px;
 }
 .honor-column-award {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 60%;
 }
-.award-column-award-child {
+.award-para-parent {
     display: flex;
     flex-direction: row;
+}
+.find-more {
+    margin-top: 21px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.award-table-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-right: 30px;
+}
+.award-table-column {
+    width: 100%;
+    max-width: 40%;
+}
+.award-heading {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.award-sub-heading {
+    opacity: 50%;
+    font-weight: 500;
 }
 .award-para {
-    width: 100%;
-    max-width: 50%;
-} */
+    line-height: 2;
+    font-weight: 400;
+    opacity: 90%;
+}
 
 .infinite-scroll {
     display: flex;
@@ -447,10 +454,13 @@ header li a:hover {
 }
 .scroll p {
     text-transform: uppercase;
-    font-size: 8em;
+    font-size: 5em;
     font-style: italic;
     color: black;
     font-weight: bold;
+}
+.scroll img {
+    width: 3%;
 }
 .RightToLeft {
     animation: RightToLeft 40s infinite linear;
