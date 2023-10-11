@@ -454,13 +454,39 @@ header li a:hover {
     z-index: 1;
     transform: scaleX(-1) scale(1.5) translate(10%, -45%);
 }
-
+.exquisite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    border: 1px solid red;
+}
+.exquisite img {
+    position: relative;
+    left: -15%;
+    transform: translate(0%, -10%);
+    width: 65%;
+}
+.exquisite-column-heading-1 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #686057;
+    margin-bottom: -40px;
+}
+.exquisite-column-heading-2 {
+    font-weight: 500;
+    font-size: 4rem;
+}
 
 
 .infinite-scroll {
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+.exquisite-row {
+    display: flex;
 }
 .scroll {
     white-space: nowrap;
