@@ -392,45 +392,7 @@ header li a:hover {
 .product-items p {
     text-align: center;
 }
-/* .honor-parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.honor-row {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 3em;
-    border: 1px solid red;
-}
-.honor-heading-1 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #686057;
-    margin-bottom: -40px;
-}
-.honor-heading-2 {
-    font-weight: 500;
-    font-size: 4rem;
-    margin-bottom: -40px;
-}
-.honor-column-award {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.award-column-award-child {
-    display: flex;
-    flex-direction: row;
-}
-.award-para {
-    width: 100%;
-    max-width: 50%;
-} */
 
 .infinite-scroll {
     display: flex;
