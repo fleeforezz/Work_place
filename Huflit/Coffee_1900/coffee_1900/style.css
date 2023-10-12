@@ -497,6 +497,7 @@ header li a:hover {
 .exquisite-subrc-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 3rem;
     align-items: center;
     justify-content: center;
