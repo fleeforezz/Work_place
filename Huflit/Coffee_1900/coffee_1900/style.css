@@ -454,10 +454,14 @@ header li a:hover {
     z-index: 1;
     transform: scaleX(-1) scale(1.5) translate(10%, -45%);
 }
+.section-4 {
+    padding-bottom: 3em;
+    background-color: #f2ede0;
+}
 .exquisite {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 200px;
     background-color: #f2ede0;
 }
@@ -468,7 +472,12 @@ header li a:hover {
     width: 65%;
 }
 .exquisite-row {
+    margin-top: 100px;
     margin-left: -100px;
+}
+.exquisite-column-heading {
+    width: 100%;
+    max-width: 100%;
 }
 .exquisite-column-heading-1 {
     font-size: 1.1rem;
@@ -480,8 +489,54 @@ header li a:hover {
 .exquisite-column-heading-2 {
     font-weight: 500;
     font-size: 4rem;
+    margin-bottom: 30px;
 }
-
+.exquisite-column-heading-3 {
+    opacity: 80%;
+}
+.exquisite-subrc-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.exquisite-subrc-heading {
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.exquisite-subrc-input-form-input form input {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+}
+.exquisite-subrc-input-form-input form input:focus {
+    outline-style: none;
+}
+.exquisite-subrc-input-form-checkbox form {
+    font-size: 0.9rem;
+}
+.policy {
+    text-decoration: none;
+    color: #e4594d;
+}
+.policy:hover {
+    text-decoration: underline;
+}
+.exquisite-subrc-subcribe a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #504a43;
+}
+.exquisite-subrc-subcribe a i {
+    margin-right: 10px;
+    transition: 250ms;
+}
+.exquisite-subrc-subcribe a:hover i {
+    transform: rotate(15deg);
+}
 
 .infinite-scroll {
     display: flex;
