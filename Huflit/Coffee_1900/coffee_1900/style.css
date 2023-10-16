@@ -376,6 +376,7 @@ header li a:hover {
 .honor-row {
     display: flex;
     flex-direction: row;
+    gap: 3rem;
     margin-left: 100px;
     justify-content: center;
 }
@@ -406,11 +407,12 @@ header li a:hover {
 .award-para-parent {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 4.4rem; */
 }
 .find-more {
-    position: absolute;
     margin-top: 21px;
-    margin-left: 665px;
+    margin-left: 50px;
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
@@ -772,3 +774,4 @@ header li a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
