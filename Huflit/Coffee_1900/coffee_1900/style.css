@@ -24,7 +24,7 @@ body {
 }
 
 /*! COFFEE SHOP HEAD */
-
+/*TODO LEFT NAVIGATION BAR */
 .navigation-bar {
     display: flex;
     position: fixed;
@@ -35,6 +35,96 @@ body {
     background-color: #f2ede0;
     align-items: center;
 }
+header ul {
+    list-style: none;
+}
+header li {
+    float: left;
+    margin-right: 3em;
+}
+header li a {
+    font-weight: 500;
+    color: #504a43;
+    text-decoration: none;
+    transition: 400ms;
+}
+.nav-home::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 3%;
+    width: 3.8%;
+    height: 2px;
+    background-color: #504a43;
+}
+/* nav-about */
+.nav-about:focus::after,
+.nav-about:hover::after {
+    width: 4.9%;
+    left: 16.5%;
+}
+.nav-about::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 16.5%;
+    width: 0%;
+    height: 2px;
+    background-color: #504a43;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+/* nav-contact */
+.nav-contact:focus::after,
+.nav-contact:hover::after {
+    width: 2.9%;
+    left: 23.9%;
+}
+.nav-contact::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 23.9%;
+    width: 0%;
+    height: 2px;
+    background-color: #504a43;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+.home-dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.home-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f121c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.home-dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+/* Change color of dropdown links on hover */
+.home-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+/* Show the dropdown menu on hover */
+.home-dropdown:hover .home-dropdown-content {
+    display: block;
+}
+/*TODO CENTER NAVIGATION BAR */
 .logo {
     display: flex;
     flex-direction: column;
@@ -48,58 +138,7 @@ body {
 .navigation-bar img {
     width: 5%;
 }
-header ul {
-    flex-wrap: nowrap;
-    list-style: none;
-}
-header li {
-    float: left;
-    margin-right: 3em;
-}
-header li a {
-    font-weight: 500;
-    color: #504a43;
-    text-decoration: none;
-    transition: 250ms;
-}
-header li a:hover {
-    color: #686057;
-}
-
-.home-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.home-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #0f121c;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.home-dropdown-content a {
-    display: block;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 0.8rem;
-}
-
-/* Change color of dropdown links on hover */
-.home-dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.home-dropdown:hover .home-dropdown-content {
-    display: block;
-}
-
+/*TODO RIGHT NAVIGATION BAR */
 .search-shop-signup-child {
     display: flex;
     gap: 3rem;
@@ -158,33 +197,54 @@ header li a:hover {
     text-decoration: none;
     transition: 250ms;
 }
+.location:focus::after,
+.location:hover::after {
+    width: 2%;
+    left: 80.4%;
+}
+.location::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 80.4%;
+    width: 0%;
+    height: 2px;
+    background-color: #504a43;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
 .signup {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #504a43;
-    /* padding: 15px 30px; */
-    /* border: 1px solid #504a43;
-    background-color: #504a43; */
-    transition: 250ms;
     cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: color;
+}
+.signup:focus,
+.signup:hover {
+    color: #e4594d;
+}
+.signup:focus::after,
+.signup:hover::after {
+    width: 0%;
+    left: 85%;
 }
 .signup::after {
     content: "";
-    display: none;
     position: absolute;
-    width: 3.2%;
-    height: 2%;
+    pointer-events: none;
+    bottom: 35px;
+    left: 84.9%;
+    width: 3%;
+    height: 2px;
     background-color: #e4594d;
-}
-.signup:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 3.2%;
-    height: 2%;
-    background-color: #e4594d;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 .login {
     text-decoration: none;
@@ -192,24 +252,31 @@ header li a:hover {
     font-weight: 600;
     text-transform: uppercase;
     color: #504a43;
-    transition: 250ms;
     cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: color;
+}
+.login:focus,
+.login:hover {
+    color: #e4594d;
+}
+.login:focus::after,
+.login:hover::after {
+    width: 0%;
+    left: 90.5%;
 }
 .login::after {
     content: "";
-    display: none;
     position: absolute;
-    width: 3.2%;
-    height: 2%;
-    background-color: #e4594d;
-}
-.login:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
+    pointer-events: none;
+    bottom: 35px;
+    left: 90.5%;
     width: 4.3%;
-    height: 2%;
+    height: 2px;
     background-color: #e4594d;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 /*! COFFEE SHOP SECTION */
@@ -741,14 +808,101 @@ header li a:hover {
 }
 .footer-navigation-bar-li {
     float: left;
-    margin-right: 30px;
+    margin-right: 2em;
 }
 .footer-navigation-bar-li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
     opacity: 90%;
+    transition-duration: 400ms;
 }
+.footer-home:focus::after,
+.footer-home:hover::after {
+    width: 3.9%;
+    left: 55.7%;
+}
+.footer-home::after {
+    content: "";
+    position: absolute;
+    bottom: -5992px;
+    left: 55.7%;
+    width: 0%;
+    height: 2px;
+    background-color: #f2ede0;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.footer-product:focus::after,
+.footer-product:hover::after {
+    width: 3.9%;
+    left: 61.2%;
+}
+.footer-product::after {
+    content: "";
+    position: absolute;
+    bottom: -5992px;
+    left: 61.2%;
+    width: 0%;
+    height: 2px;
+    background-color: #f2ede0;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.footer-about:focus::after,
+.footer-about:hover::after {
+    width: 4.9%;
+    left: 66.7%;
+}
+.footer-about::after {
+    content: "";
+    position: absolute;
+    bottom: -5992px;
+    left: 66.7%;
+    width: 0%;
+    height: 2px;
+    background-color: #f2ede0;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.footer-contact:focus::after,
+.footer-contact:hover::after {
+    width: 2.8%;
+    left: 73.3%;
+}
+.footer-contact::after {
+    content: "";
+    position: absolute;
+    bottom: -5992px;
+    left: 73.3%;
+    width: 0%;
+    height: 2px;
+    background-color: #f2ede0;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.footer-shop:focus::after,
+.footer-shop:hover::after {
+    width: 3.7%;
+    left: 77.8%;
+}
+.footer-shop::after {
+    content: "";
+    position: absolute;
+    bottom: -5992px;
+    left: 77.8%;
+    width: 0%;
+    height: 2px;
+    background-color: #f2ede0;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
 .footer-row-2 {
     display: flex;
     flex-direction: row;
