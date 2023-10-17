@@ -47,7 +47,7 @@ body {
     text-transform: uppercase;
 }
 .navigation-bar img {
-    width: 9%;
+    width: 5%;
 }
 header ul {
     flex-wrap: nowrap;
@@ -135,6 +135,7 @@ header li a:hover {
     display: block;
     color: white;
     padding: 12px 16px;
+    font-weight: 500;
     text-decoration: none;
     font-size: 0.8rem;
 }
@@ -142,12 +143,15 @@ header li a:hover {
 /* Change color of dropdown links on hover */
 .shop-dropdown-content a:hover {
     background-color: #f1f1f1;
+    font-weight: 500;
+    color: #504a43;
+    transition: 250ms;
+    
 }
 
 /* Show the dropdown menu on hover */
 .shop-dropdown:hover .shop-dropdown-content {
     display: block;
-    
 }
 .location {
     font-weight: 500;
@@ -160,34 +164,53 @@ header li a:hover {
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: white;
-    padding: 15px 30px;
-    border: 1px solid #504a43;
-    background-color: #504a43;
+    color: #504a43;
+    /* padding: 15px 30px; */
+    /* border: 1px solid #504a43;
+    background-color: #504a43; */
     transition: 250ms;
     cursor: pointer;
 }
-.signup:hover {
-    color: #504a43;
-    background-color: transparent;
-    border: 1px solid #504a43;
+.signup::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 3.2%;
+    height: 2%;
+    background-color: #e4594d;
+}
+.signup:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3.2%;
+    height: 2%;
+    background-color: #e4594d;
 }
 .login {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: white;
-    padding: 15px 30px;
-    border: 1px solid #504a43;
-    background-color: #504a43;
+    color: #504a43;
     transition: 250ms;
     cursor: pointer;
 }
-.login:hover {
-    color: #504a43;
-    background-color: transparent;
-    border: 1px solid #504a43;
+.login::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 3.2%;
+    height: 2%;
+    background-color: #e4594d;
+}
+.login:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.3%;
+    height: 2%;
+    background-color: #e4594d;
 }
 
 /*! COFFEE SHOP SECTION */
@@ -561,6 +584,7 @@ header li a:hover {
 .exquisite-subrc-input-form-input form input {
     font-size: 1.1rem;
     padding-bottom: 10px;
+    padding-right: 400px;
     border: none;
     background-color: transparent;
 }
@@ -609,13 +633,13 @@ header li a:hover {
 }
 .scroll p {
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.1em;
     font-style: italic;
     color: black;
     font-weight: bold;
 }
 .scroll img {
-    width: 2%;
+    width: 1.5%;
 }
 .RightToLeft {
     animation: RightToLeft 40s infinite linear;
