@@ -34,7 +34,6 @@ body {
     padding: 1em;
     background-color: #f2ede0;
     align-items: center;
-    justify-content: center;
 }
 .logo {
     display: flex;
