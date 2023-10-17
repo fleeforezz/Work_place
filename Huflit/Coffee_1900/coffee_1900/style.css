@@ -102,7 +102,7 @@ header li a:hover {
 
 .search-shop-signup-child {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: nowrap;
     margin-left: 10px;
     align-items: center;
