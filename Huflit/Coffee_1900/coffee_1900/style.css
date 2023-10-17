@@ -52,8 +52,6 @@ body {
 header ul {
     flex-wrap: nowrap;
     list-style: none;
-    /* margin-left: 230px;
-    margin-right: 250px; */
 }
 header li {
     float: left;
@@ -86,11 +84,11 @@ header li a:hover {
 
 /* Links inside the dropdown */
 .home-dropdown-content a {
+    display: block;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     font-size: 0.8rem;
-    display: block;
 }
 
 /* Change color of dropdown links on hover */
@@ -110,6 +108,52 @@ header li a:hover {
     margin-left: 10px;
     align-items: center;
     justify-content: center;
+}
+.shop {
+    font-weight: 500;
+    color: #504a43;
+    text-decoration: none;
+    transition: 250ms;
+}
+.shop-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.shop-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f121c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.shop-dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* Change color of dropdown links on hover */
+.shop-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.shop-dropdown:hover .shop-dropdown-content {
+    display: block;
+    
+}
+.location {
+    font-weight: 500;
+    color: #504a43;
+    text-decoration: none;
+    transition: 250ms;
 }
 .signup {
     text-decoration: none;
@@ -782,119 +826,6 @@ header li a:hover {
 }
 
 @media screen and (max-Width: 1800px) {
-    .navigation-bar {
-        display: flex;
-        position: fixed;
-        gap: 1rem;
-    }
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .navigation-bar h1 {
-        font-size: 1rem;
-        text-transform: uppercase;
-    }
-    .navigation-bar img {
-        width: 9%;
-    }
-    header ul {
-        flex-wrap: nowrap;
-        list-style: none;
-        /* margin-left: 230px;
-        margin-right: 250px; */
-    }
-    header li {
-        float: left;
-        margin-right: 3em;
-    }
-    header li a {
-        font-weight: 500;
-        color: #504a43;
-        text-decoration: none;
-        transition: 250ms;
-    }
-    header li a:hover {
-        color: #686057;
-    }
-    
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #0f121c;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        font-size: 0.8rem;
-        display: block;
-    }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background-color: #f1f1f1;
-    }
-    
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .search-shop-signup-child {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: nowrap;
-        margin-left: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .signup {
-        text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: white;
-        padding: 15px 30px;
-        border: 1px solid #504a43;
-        background-color: #504a43;
-        transition: 250ms;
-        cursor: pointer;
-    }
-    .signup:hover {
-        color: #504a43;
-        background-color: transparent;
-        border: 1px solid #504a43;
-    }
-    .login {
-        text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: white;
-        padding: 15px 30px;
-        border: 1px solid #504a43;
-        background-color: #504a43;
-        transition: 250ms;
-        cursor: pointer;
-    }
-    .login:hover {
-        color: #504a43;
-        background-color: transparent;
-        border: 1px solid #504a43;
-    }
+
 }
 
