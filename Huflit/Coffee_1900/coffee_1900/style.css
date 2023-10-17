@@ -805,6 +805,7 @@ header li a:hover {
     flex-wrap: wrap;
     gap: 50rem;
     margin-top: 50px;
+    margin-left: 25px;
     align-items: center;
     justify-content: center;
     background-color: #0f121c;
