@@ -36,6 +36,7 @@ body {
     align-items: center;
 }
 header ul {
+    position: relative;
     list-style: none;
 }
 header li {
@@ -51,23 +52,23 @@ header li a {
 .nav-home::after {
     content: "";
     position: absolute;
-    bottom: 35px;
-    left: 3%;
-    width: 3.8%;
+    bottom: -5px;
+    left: 7.5%;
+    width: 13.5%;
     height: 2px;
     background-color: #504a43;
 }
 /* nav-about */
 .nav-about:focus::after,
 .nav-about:hover::after {
-    width: 4.9%;
-    left: 16.5%;
+    width: 17.5%;
+    left: 55%;
 }
 .nav-about::after {
     content: "";
     position: absolute;
-    bottom: 35px;
-    left: 16.5%;
+    bottom: -5px;
+    left: 55%;
     width: 0%;
     height: 2px;
     background-color: #504a43;
@@ -78,14 +79,14 @@ header li a {
 /* nav-contact */
 .nav-contact:focus::after,
 .nav-contact:hover::after {
-    width: 2.9%;
-    left: 23.9%;
+    width: 10.3%;
+    left: 81%;
 }
 .nav-contact::after {
     content: "";
     position: absolute;
-    bottom: 35px;
-    left: 23.9%;
+    bottom: -5px;
+    left: 81%;
     width: 0%;
     height: 2px;
     background-color: #504a43;
@@ -192,6 +193,7 @@ header li a {
     display: block;
 }
 .location {
+    position: relative;
     font-weight: 500;
     color: #504a43;
     text-decoration: none;
@@ -199,14 +201,14 @@ header li a {
 }
 .location:focus::after,
 .location:hover::after {
-    width: 2%;
-    left: 80.4%;
+    width: 96%;
+    left: 7%;
 }
 .location::after {
     content: "";
     position: absolute;
-    bottom: 35px;
-    left: 80.4%;
+    bottom: -5px;
+    left: 7%;
     width: 0%;
     height: 2px;
     background-color: #504a43;
@@ -215,6 +217,7 @@ header li a {
     transition-property: width, left;
 }
 .signup {
+    position: relative;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -231,15 +234,15 @@ header li a {
 .signup:focus::after,
 .signup:hover::after {
     width: 0%;
-    left: 85%;
+    left: 1%;
 }
 .signup::after {
     content: "";
     position: absolute;
     pointer-events: none;
-    bottom: 35px;
-    left: 84.9%;
-    width: 3%;
+    bottom: -5px;
+    left: 1%;
+    width: 100%;
     height: 2px;
     background-color: #e4594d;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -247,6 +250,7 @@ header li a {
     transition-property: width, left;
 }
 .login {
+    position: relative;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -263,15 +267,15 @@ header li a {
 .login:focus::after,
 .login:hover::after {
     width: 0%;
-    left: 90.5%;
+    left: 1%;
 }
 .login::after {
     content: "";
     position: absolute;
     pointer-events: none;
-    bottom: 35px;
-    left: 90.5%;
-    width: 4.3%;
+    bottom: -5px;
+    left: 1%;
+    width: 100%;
     height: 2px;
     background-color: #e4594d;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -805,6 +809,7 @@ header li a {
 }
 .footer-navigation-bar-ul {
     list-style: none;
+    position: relative;
 }
 .footer-navigation-bar-li {
     float: left;
@@ -819,14 +824,14 @@ header li a {
 }
 .footer-home:focus::after,
 .footer-home:hover::after {
-    width: 3.9%;
-    left: 55.7%;
+    width: 12.5%;
+    left: 7.5%;
 }
 .footer-home::after {
     content: "";
     position: absolute;
-    bottom: -5992px;
-    left: 55.7%;
+    bottom: -5px;
+    left: 7.5%;
     width: 0%;
     height: 2px;
     background-color: #f2ede0;
@@ -836,14 +841,14 @@ header li a {
 }
 .footer-product:focus::after,
 .footer-product:hover::after {
-    width: 3.9%;
-    left: 61.2%;
+    width: 12.5%;
+    left: 26%;
 }
 .footer-product::after {
     content: "";
     position: absolute;
-    bottom: -5992px;
-    left: 61.2%;
+    bottom: -5px;
+    left: 26%;
     width: 0%;
     height: 2px;
     background-color: #f2ede0;
@@ -853,14 +858,14 @@ header li a {
 }
 .footer-about:focus::after,
 .footer-about:hover::after {
-    width: 4.9%;
-    left: 66.7%;
+    width: 16.5%;
+    left: 44.5%;
 }
 .footer-about::after {
     content: "";
     position: absolute;
-    bottom: -5992px;
-    left: 66.7%;
+    bottom: -5px;
+    left: 44.5%;
     width: 0%;
     height: 2px;
     background-color: #f2ede0;
@@ -870,14 +875,14 @@ header li a {
 }
 .footer-contact:focus::after,
 .footer-contact:hover::after {
-    width: 2.8%;
-    left: 73.3%;
+    width: 9.8%;
+    left: 66.5%;
 }
 .footer-contact::after {
     content: "";
     position: absolute;
-    bottom: -5992px;
-    left: 73.3%;
+    bottom: -5px;
+    left: 66.5%;
     width: 0%;
     height: 2px;
     background-color: #f2ede0;
@@ -887,14 +892,14 @@ header li a {
 }
 .footer-shop:focus::after,
 .footer-shop:hover::after {
-    width: 3.7%;
-    left: 77.8%;
+    width: 12.5%;
+    left: 82%;
 }
 .footer-shop::after {
     content: "";
     position: absolute;
-    bottom: -5992px;
-    left: 77.8%;
+    bottom: -5px;
+    left: 82%;
     width: 0%;
     height: 2px;
     background-color: #f2ede0;
