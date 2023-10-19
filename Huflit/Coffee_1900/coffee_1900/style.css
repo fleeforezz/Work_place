@@ -732,11 +732,11 @@ header li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 4.4rem; */
+    gap: 4rem;
+    align-items: center;
 }
 .find-more {
-    margin-top: 21px;
-    margin-left: 50px;
+    /* margin-top: -50px; */
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
