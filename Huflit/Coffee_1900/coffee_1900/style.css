@@ -94,8 +94,6 @@ header li a {
     transition-duration: 400ms;
     transition-property: width, left;
 }
-
-
 .home-dropdown {
     position: relative;
     display: inline-block;
@@ -108,6 +106,12 @@ header li a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    animation: dropdown 300ms ease-in-out forwards;
+}
+@keyframes dropdown {
+    0% {
+        transform: translateY(5%);
+    }
 }
 /* Links inside the dropdown */
 .home-dropdown-content a {
@@ -117,13 +121,140 @@ header li a {
     text-decoration: none;
     font-size: 0.8rem;
 }
-/* Change color of dropdown links on hover */
-.home-dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-/* Show the dropdown menu on hover */
 .home-dropdown:hover .home-dropdown-content {
     display: block;
+}
+
+.dropdown-1:focus,
+.dropdown-1:hover {
+    margin-left: 10px;
+}
+.dropdown-1:focus::after,
+.dropdown-1:hover::after {
+    width: 24%;
+    left: 11%;
+}
+.dropdown-1::after {
+    content: "";
+    position: absolute;
+    bottom: 202px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.dropdown-2:focus,
+.dropdown-2:hover {
+    margin-left: 10px;
+}
+.dropdown-2:focus::after,
+.dropdown-2:hover::after {
+    width: 45%;
+    left: 11%;
+}
+.dropdown-2::after {
+    content: "";
+    position: absolute;
+    bottom: 162px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.dropdown-3:focus,
+.dropdown-3:hover {
+    margin-left: 10px;
+}
+.dropdown-3:focus::after,
+.dropdown-3:hover::after {
+    width: 45%;
+    left: 11%;
+}
+.dropdown-3::after {
+    content: "";
+    position: absolute;
+    bottom: 122px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.dropdown-4:focus,
+.dropdown-4:hover {
+    margin-left: 10px;
+}
+.dropdown-4:focus::after,
+.dropdown-4:hover::after {
+    width: 54%;
+    left: 11%;
+}
+.dropdown-4::after {
+    content: "";
+    position: absolute;
+    bottom: 85px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.dropdown-5:focus,
+.dropdown-5:hover {
+    margin-left: 10px;
+}
+.dropdown-5:focus::after,
+.dropdown-5:hover::after {
+    width: 45%;
+    left: 11%;
+}
+.dropdown-5::after {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.dropdown-6:focus,
+.dropdown-6:hover {
+    margin-left: 10px;
+}
+.dropdown-6:focus::after,
+.dropdown-6:hover::after {
+    width: 38%;
+    left: 11%;
+}
+.dropdown-6::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 11%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 /*TODO CENTER NAVIGATION BAR */
 .logo {
