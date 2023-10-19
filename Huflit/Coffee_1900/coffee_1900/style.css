@@ -23,8 +23,8 @@ body {
     font-size: 1rem;
 }
 
-/*! COFFEE SHOP HEAD */
-/*TODO LEFT NAVIGATION BAR */
+/*TODO: COFFEE SHOP HEAD */
+/* LEFT NAVIGATION BAR */
 .navigation-bar {
     display: flex;
     position: fixed;
@@ -484,7 +484,7 @@ header li a {
     transition-property: width, left;
 }
 
-/*! COFFEE SHOP SECTION */
+/*TODO: COFFEE SHOP SECTION */
 
 .master-section {
     display: flex;
@@ -986,7 +986,7 @@ header li a {
     border: 1px solid #504a43;
 }
 
-/*! COFFEE SHOP FOOTER */
+/*TODO: COFFEE SHOP FOOTER */
 .footer {
     padding: 3em;
     background-color: #0f121c;
