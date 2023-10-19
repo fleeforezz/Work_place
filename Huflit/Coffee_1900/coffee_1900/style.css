@@ -298,8 +298,13 @@ header li a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    animation: shop-dropdown 300ms ease-in-out forwards;
 }
-
+@keyframes shop-dropdown {
+    0% {
+        transform: translateY(5%);
+    }
+}
 /* Links inside the dropdown */
 .shop-dropdown-content a {
     display: block;
@@ -308,21 +313,57 @@ header li a {
     font-weight: 500;
     text-decoration: none;
     font-size: 0.8rem;
+    transition: 400ms;
 }
-
-/* Change color of dropdown links on hover */
-.shop-dropdown-content a:hover {
-    background-color: #f1f1f1;
-    font-weight: 500;
-    color: #504a43;
-    transition: 250ms;
-    
-}
-
 /* Show the dropdown menu on hover */
 .shop-dropdown:hover .shop-dropdown-content {
     display: block;
 }
+
+.shop-1:focus,
+.shop-1:hover {
+    margin-left: 10px;
+}
+.shop-1:focus::after,
+.shop-1:hover::after {
+    width: 50%;
+    left: 10%;
+}
+.shop-1::after {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 10%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.shop-2:focus,
+.shop-2:hover {
+    margin-left: 10px;
+}
+.shop-2:focus::after,
+.shop-2:hover::after {
+    width: 28%;
+    left: 10%;
+}
+.shop-2::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
 .location {
     position: relative;
     font-weight: 500;
@@ -434,6 +475,12 @@ header li a {
     font-weight: 600;
     width: 100%;
 }
+.gradient-text {
+    background: linear-gradient(113deg, #d49f61, #ffbd6d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .master-section-para {
     width: 100%;
     min-width: 100%;
@@ -515,17 +562,17 @@ header li a {
     justify-content: center;
 }
 .glass-img-parent {
+    position: relative;
     width: 100%;
     max-width: 37%;
 }
 .glass-img-parent::after {
     content: "Chỉ có những hạt cà phê nguyên chất";
-    display: block;
     position: absolute;
-    left: 32%;
-    margin-top: -277px;
+    bottom: 4px;
+    left: 31%;
     padding: 80px;
-    width: 13%;
+    width: 35%;
     background-color: #efae54;
     color: white;
     font-weight: bold;
@@ -580,6 +627,7 @@ header li a {
     top: auto;
     left: 100%;
     transform: translate(-100%, -40%);
+    z-index: -1;
 }
 .product {
     padding: 3em;
@@ -612,6 +660,7 @@ header li a {
     display: none;
     height: 0.2em;
 }
+
 .product-card:hover::-webkit-scrollbar {
     display: block;
 }
@@ -852,7 +901,6 @@ header li a {
         transform: translateX(-50%);
     }
 }
-
 .job {
     padding: 8em;
 }
@@ -1137,8 +1185,3 @@ header li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
-@media screen and (max-Width: 1800px) {
-
-}
-
