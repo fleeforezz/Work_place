@@ -691,7 +691,6 @@ header li a {
     display: none;
     height: 0.2em;
 }
-
 .product-card:hover::-webkit-scrollbar {
     display: block;
 }
@@ -933,38 +932,58 @@ header li a {
         transform: translateX(-50%);
     }
 }
-.job {
-    padding: 8em;
+.post {
+    padding: 3em;
 }
-.job-top-para {
-    text-align: center;
-    font-size: 2.8rem;
-}
-.job-next-para {
-    text-align: center;
-    font-size: 1.05rem;
-    color: #686057;
-}
-.job-card {
+.post-row {
     display: flex;
-    gap: 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+.post-heading {
+    text-align: center;
+}
+.post-heading-1 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #686057;
+    margin-bottom: -40px;
+}
+.post-heading-2 {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+.post-card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 70%;
+    margin-top: 7em;
+    overflow: auto;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10em;
 }
-.job-items {
+.post-card::-webkit-scrollbar {
+    display: block;
+    height: 0.2em;
+}
+.post-card:hover::-webkit-scrollbar {
+    display: block;
+}
+.post-card::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.post-card::-webkit-scrollbar-thumb {
+    background-color: #6e6e6e;
+}
+.post-items {
     text-decoration: none;
+    margin-bottom: 3em;
     color: black;
-    padding: 4em 3em;
-    border: 1px solid #a3a3a3;
     transition: 250ms;
-    text-align: center;
-}
-.job-items:hover {
-    border: 1px solid white;
-    box-shadow:  20px 20px 60px #bebebe,
-                -20px -20px 60px #ffffff;
 }
 .view-our-services-button {
     margin-top: 6em;
