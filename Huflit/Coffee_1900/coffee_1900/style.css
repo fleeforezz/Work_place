@@ -28,6 +28,8 @@ body {
 .navigation-bar {
     display: flex;
     position: fixed;
+    top: 0;
+    width: 100%;
     gap: 10rem;
     z-index: 1;
     width: 100%;
@@ -388,7 +390,7 @@ header li a {
     transition-duration: 400ms;
     transition-property: width, left;
 }
-.shop-1:hover::after {
+.shop-2:hover::after {
     margin-left: 10px;
 }
 
