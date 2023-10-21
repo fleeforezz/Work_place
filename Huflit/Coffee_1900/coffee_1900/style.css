@@ -1716,7 +1716,7 @@ header li a {
         justify-content: center;
     }
     .master-section-child-2 {
-        margin-top: 50px;
+        margin-top: 1px;
     }
     .master-coffee {
         text-transform: uppercase;
@@ -1731,7 +1731,7 @@ header li a {
         color: #6e6e6e;
         font-size: 0.9rem;
         font-weight: 500;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         line-height: 1.7;
     }
     .discorver-us {
@@ -1783,7 +1783,7 @@ header li a {
         text-align: center;
     }
     .separater {
-        padding: 70px 0.5px;
+        padding: 50px 0.3px;
         background-color: rgb(189, 189, 189);
     }
     .quality-items:hover {
@@ -1792,7 +1792,7 @@ header li a {
     }
     .glass-coffee {
         padding: 3em;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .glass-parent {
         width: 100%;
@@ -1816,46 +1816,46 @@ header li a {
         position: absolute;
         bottom: 4px;
         left: 35%;
-        padding: 80px 140px 80px 80px;
+        padding: 50px 140px 50px 50px;
         width: 35%;
         background-color: #efae54;
         color: white;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-transform: uppercase;
     }
     .glass-img {
-        width: 90%;
+        width: 85%;
     }
     .glass-para-1 {
         text-transform: uppercase;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 400;
         margin-bottom: -40px;
     }
     .glass-para-2 {
-        font-size: 4rem;
+        font-size: 3.4rem;
         font-weight: 500;
         margin-bottom: 40px;
     }
     .glass-para-3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #6e6e7c;
         margin-bottom: 60px;
     }
     .glass-para-4 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
     .glass-para-5 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 500;
         margin-bottom: 60px;
     }
     .glass-buynow {
-        padding: 1em 3em;
+        padding: 0.7em 2em;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
         background-color: #e4594d;
@@ -1881,7 +1881,7 @@ header li a {
         text-align: center;
     }
     .section-top-para {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: 400;
         color: #686057;
@@ -1889,7 +1889,7 @@ header li a {
     }
     .section-next-para {
         font-weight: 500;
-        font-size: 4rem;
+        font-size: 3.4rem;
         margin-bottom: -40px;
     }
     .product-card {
