@@ -1816,7 +1816,7 @@ header li a {
         position: absolute;
         bottom: 4px;
         left: 35%;
-        padding: 50px 140px 50px 50px;
+        padding: 40px 100px 40px 40px;
         width: 35%;
         background-color: #efae54;
         color: white;
@@ -1825,7 +1825,7 @@ header li a {
         text-transform: uppercase;
     }
     .glass-img {
-        width: 85%;
+        width: 86%;
     }
     .glass-para-1 {
         text-transform: uppercase;
@@ -1921,7 +1921,8 @@ header li a {
         margin-top: 5em;
     }
     .product-items img {
-        padding: 20px;
+        width: 400px;
+        padding: 10px;
         background-color: white;
         margin-bottom: 20px;
     }
@@ -1929,7 +1930,7 @@ header li a {
         text-decoration: none;
         color: black;
         text-align: center;
-        font-size: 1.05rem;
+        font-size: 0.9rem;
         transition: 250ms;
     }
     .product-items a:hover {
@@ -1937,6 +1938,7 @@ header li a {
     }
     .product-items p {
         text-align: center;
+        font-size: 0.9rem;
     }
     .honor {
         padding: 3em;
@@ -1958,7 +1960,7 @@ header li a {
         max-width: 35%;
     }
     .honor-heading-1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: 400;
         color: #686057;
@@ -1966,7 +1968,7 @@ header li a {
     }
     .honor-heading-2 {
         font-weight: 500;
-        font-size: 4rem;
+        font-size: 3.4rem;
         margin-bottom: -40px;
     }
     .honor-column-award {
@@ -1981,10 +1983,9 @@ header li a {
         align-items: center;
     }
     .find-more {
-        /* margin-top: -50px; */
         text-decoration: none;
         color: black;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
     .find-more i {
@@ -2007,13 +2008,15 @@ header li a {
     }
     .award-heading {
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .award-sub-heading {
         opacity: 50%;
         font-weight: 500;
+        font-size: 0.9rem;
     }
     .award-para {
+        font-size: 0.9rem;
         line-height: 1.6;
         font-weight: 400;
         opacity: 90%;
