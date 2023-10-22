@@ -1979,7 +1979,7 @@ header li a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 4rem;
+        gap: 4contr  asdrem;
         align-items: center;
     }
     .find-more {

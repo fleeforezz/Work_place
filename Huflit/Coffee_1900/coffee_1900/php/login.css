@@ -27,17 +27,17 @@ body {
     background-color: #686057;
 }
 
-.signup-form-container h1 {
+.login-form-container h1 {
     text-align: center;
 }
 
-.signup-form-container-child {
+.login-form-container-child {
     position: relative;
     top: 20%;
     left: -25%;
 }
 
-.signup-form {
+.login-form {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
@@ -49,24 +49,25 @@ body {
                 -24px -24px 48px #ffffff;
 }
 
-.signup-form-container label {
+.login-form-container label {
     font-weight: 600;
     font-size: 0.8rem;
     color: #504a43;
 }
 
-.signup-form-container input {
+.login-form-container input {
     padding: 10px 30px;
     border: none;
     margin-top: 10px;
     border-radius: 3px;
+    outline-style: none;
 }
 
-.signup-form-container input:hover {
+.login-form-container input:hover {
     border: none;
 }
 
-.signup-form-container button {
+.login-form-container button {
     border: none;
     width: 100%;
     padding: 10px;
@@ -76,21 +77,21 @@ body {
     background-color: #8d8d8d;
     transition: 200ms ease-in;
 }
-.signup-form-container button:hover {
+.login-form-container button:hover {
     background-color: #757575;
 }
-.signup-form-container form {
+.login-form-container form {
     font-size: 0.9em;
 }
-.signup-form-container form a {
+.login-form-container form a {
     color: blue;
     text-decoration: none;
 }
-.signup-form-container form a:hover {
+.login-form-container form a:hover {
     text-decoration: underline;
 }
 
-.signup-form-container img {
+.login-form-container img {
     width: 50%;
     min-width: 80%;
 }
