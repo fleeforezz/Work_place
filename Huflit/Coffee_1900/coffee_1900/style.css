@@ -30,7 +30,7 @@ body {
 .navigation-bar {
     display: flex;
     position: fixed;
-    gap: 14rem;
+    gap: 13rem;
     z-index: 1;
     padding: 1em;
     background-color: #f2ede0;
@@ -42,7 +42,7 @@ header ul {
 }
 header li {
     float: left;
-    margin-right: 3em;
+    margin-right: 2.5em;
 }
 header li a {
     font-weight: 500;
@@ -424,67 +424,33 @@ header li a {
     position: relative;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
-    color: #504a43;
+    padding: 1em 1em;
+    background-color: #e4594d;
+    color: white; 
     cursor: pointer;
     transition-duration: 400ms;
-    transition-property: color;
 }
 .signup:focus,
 .signup:hover {
-    color: #e4594d;
-}
-.signup:focus::after,
-.signup:hover::after {
-    width: 0%;
-    left: 1%;
-}
-.signup::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    bottom: -5px;
-    left: 1%;
-    width: 100%;
-    height: 2px;
-    background-color: #e4594d;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
+    opacity: 90%;
 }
 .login {
     position: relative;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
-    color: #504a43;
+    padding: 1em 1em;
+    background-color: #e4594d;
+    color: white; 
     cursor: pointer;
-    transition-duration: 400ms;
-    transition-property: color;
+    transition-duration: 250ms;
 }
 .login:focus,
 .login:hover {
-    color: #e4594d;
-}
-.login:focus::after,
-.login:hover::after {
-    width: 0%;
-    left: 1%;
-}
-.login::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    bottom: -5px;
-    left: 1%;
-    width: 100%;
-    height: 2px;
-    background-color: #e4594d;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
+    opacity: 90%;
 }
 
 /*TODO: COFFEE SHOP SECTION */
@@ -959,14 +925,13 @@ header li a {
 }
 .post-card {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 70%;
+    max-width: 75%;
     margin-top: 7em;
     overflow: auto;
     align-items: center;
-    justify-content: center;
 }
 .post-card::-webkit-scrollbar {
     display: block;
@@ -987,26 +952,13 @@ header li a {
     color: black;
     transition: 250ms;
 }
-.view-our-services-button {
-    margin-top: 6em;
-    padding: 25px;
-    display: block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.post-items img {
+    width: 450px;
 }
-.view-our-services {
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    background-color: #504a43;
-    transition: 250ms;
-}
-.view-our-services:hover {
-    color: #504a43;
-    background-color: transparent;
-    border: 1px solid #504a43;
+.post-items h3 {
+    font-size: 0.9rem;
+    color: #6e6e7c;
+    text-transform: uppercase;
 }
 
 /*TODO: COFFEE SHOP FOOTER */
