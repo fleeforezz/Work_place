@@ -836,10 +836,11 @@ header li a {
     font-size: 4rem;
     transition: 400ms ease;
     user-select: none;
+    color: #737380;
 }
 .prev:hover,
 .next:hover {
-    color: #6e6e7c;
+    color: #0f121c;
 }
 .fade {
     animation-name: fade;
