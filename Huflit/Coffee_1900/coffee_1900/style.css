@@ -786,20 +786,20 @@ header li a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 200px;
+    margin-top: 250px;
     background-color: #f2ede0;
 }
 .coffee-bean {
     position: relative;
     left: -15%;
-    transform: translate(0%, -10%);
+    transform: translate(0%, -20%);
     width: 1250px;
     height: 700px;
 }
 .coffee-jar {
     position: relative;
     left: -15%;
-    transform: translate(0%, -10%);
+    transform: translate(0%, -20%);
     width: 1250px;
     height: 700px;
 }
@@ -843,7 +843,7 @@ header li a {
 }
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 @keyframes fade {
     from {
@@ -852,6 +852,9 @@ header li a {
     to {
         opacity: 100%;
     }
+}
+.exquisite-subrc {
+    margin-top: -100px;
 }
 .exquisite-subrc-row {
     display: flex;
@@ -1184,21 +1187,21 @@ header li a {
     transition: 300ms;
 }
 #community-icon-face:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 #community-icon-insta {
     margin-right: 30px;
     transition: 300ms;
 }
 #community-icon-insta:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 #community-icon-youtube {
     margin-right: 30px;
     transition: 300ms;
 }
 #community-icon-youtube:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 .contact-row {
     display: flex;
