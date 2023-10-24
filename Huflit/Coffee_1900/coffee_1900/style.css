@@ -434,7 +434,7 @@ header li a {
 }
 .signup:focus,
 .signup:hover {
-    opacity: 90%;
+    background-color: #e63828;
 }
 .login {
     position: relative;
@@ -450,7 +450,7 @@ header li a {
 }
 .login:focus,
 .login:hover {
-    opacity: 90%;
+    background-color: #e63828;
 }
 
 /*TODO: COFFEE SHOP SECTION */
@@ -789,11 +789,19 @@ header li a {
     margin-top: 200px;
     background-color: #f2ede0;
 }
-.exquisite img {
+.coffee-bean {
     position: relative;
     left: -15%;
     transform: translate(0%, -10%);
-    width: 65%;
+    width: 1250px;
+    height: 700px;
+}
+.coffee-jar {
+    position: relative;
+    left: -15%;
+    transform: translate(0%, -10%);
+    width: 1250px;
+    height: 700px;
 }
 .exquisite-row {
     margin-top: 100px;
@@ -817,6 +825,33 @@ header li a {
 }
 .exquisite-column-heading-3 {
     opacity: 80%;
+    margin-bottom: 30px;
+}
+.mySlides {
+    display: none;
+}
+.prev,
+.next {
+    cursor: pointer;
+    font-size: 4rem;
+    transition: 400ms ease;
+    user-select: none;
+}
+.prev:hover,
+.next:hover {
+    color: #6e6e7c;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 80%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 .exquisite-subrc-row {
     display: flex;

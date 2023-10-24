@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5a0bb5d886.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/coffee.png" type="image/x-icon">
     <title>Coffee 1900</title>
@@ -294,13 +295,24 @@
 
     <section class="section-4">
         <div class="exquisite">
-            <img src="./assets/coffee-bean.jpg" alt="">
+            <div class="mySlides fade">
+                <img class="coffee-bean" src="./assets/coffee-bean.jpg" alt="">
+            </div>
+            <div class="mySlides fade">
+                <img class="coffee-jar" src="./assets/coffee-jar.jpg" alt="">
+            </div>
             <div class="exquisite-parent">
                 <div class="exquisite-row">
                     <div class="exquisite-column-heading">
                         <p class="exquisite-column-heading-1">Những gì chúng tôi làm</p>
                         <p class="exquisite-column-heading-2">Hạt cà phê tinh tế</p>
                         <p class="exquisite-column-heading-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat harum <br> autem dignissimos eius sunt ex veritatis nulla maxime id</p>
+                        <a onclick="plusSlides(-1)" class="prev">
+                            <i class="ph-thin ph-arrow-circle-left"></i>
+                        </a>
+                        <a onclick="plusSlides(1)" class="next">
+                            <i class="ph-thin ph-arrow-circle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -488,5 +500,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
