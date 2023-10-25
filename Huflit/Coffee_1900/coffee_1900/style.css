@@ -920,13 +920,13 @@ header li a {
 }
 .scroll p {
     text-transform: uppercase;
-    font-size: 2.1em;
+    font-size: 4.4em;
     font-style: italic;
     color: black;
     font-weight: bold;
 }
 .scroll img {
-    width: 1.5%;
+    width: 1.3%;
 }
 .RightToLeft {
     animation: RightToLeft 40s infinite linear;
