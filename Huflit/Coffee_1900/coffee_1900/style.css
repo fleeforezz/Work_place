@@ -967,10 +967,11 @@ header li a {
     gap: 3rem;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 75%;
+    max-width: 80%;
     margin-top: 7em;
-    overflow: auto;
+    overflow: hidden;
     align-items: center;
+    /* justify-content: center; */
 }
 .post-card::-webkit-scrollbar {
     display: block;
@@ -992,7 +993,7 @@ header li a {
     transition: 250ms;
 }
 .post-items img {
-    width: 450px;
+    width: 500px;
 }
 .post-items h3 {
     font-size: 0.9rem;
