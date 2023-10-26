@@ -723,7 +723,6 @@ header li a {
     align-items: center;
 }
 .find-more {
-    /* margin-top: -50px; */
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
@@ -740,7 +739,7 @@ header li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 4rem;
     margin-bottom: 20px;
 }
 .award-table-column {
@@ -748,7 +747,7 @@ header li a {
     max-width: 40%;
 }
 .award-heading {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.3rem;
 }
 .award-sub-heading {
@@ -774,22 +773,24 @@ header li a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 250px;
+    margin-top: 150px;
     background-color: #f2ede0;
 }
 .coffee-bean {
     position: relative;
     left: -15%;
-    transform: translate(0%, -20%);
+    transform: translate(0%, -15%);
     width: 1250px;
-    height: 700px;
+    height: 750px;
+    object-fit: cover;
 }
 .coffee-jar {
     position: relative;
     left: -15%;
-    transform: translate(0%, -20%);
+    transform: translate(0%, -15%);
     width: 1250px;
-    height: 700px;
+    height: 750px;
+    object-fit: cover;
 }
 .exquisite-row {
     margin-top: 100px;
@@ -914,7 +915,7 @@ header li a {
     font-weight: 500;
 }
 .scroll img {
-    width: 1.3%;
+    width: 2.3%;
 }
 .RightToLeft {
     animation: RightToLeft 40s infinite linear;
