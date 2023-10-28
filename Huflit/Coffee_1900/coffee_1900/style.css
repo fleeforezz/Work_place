@@ -11,12 +11,14 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 /*TODO: COFFEE SHOP HEAD */
 /* LEFT NAVIGATION BAR */
 .navigation-bar {
     display: flex;
+    flex-wrap: wrap;
     gap: 17rem;
     z-index: 1;
     padding: 1em;
@@ -852,7 +854,7 @@ header li a {
     }
 }
 .exquisite-subrc {
-    margin-top: -100px;
+    margin-top: -60px;
 }
 .exquisite-subrc-row {
     display: flex;
@@ -1018,9 +1020,13 @@ header li a {
     font-size: 4rem;
     margin-bottom: 30px;
 }
+.customer-says-heading-3 {
+    margin-bottom: 50px;
+    line-height: 30px;
+}
 .customer-says-image img {
     width: 625px;
-    height: 610px;
+    height: 640px;
     object-fit: cover;
 }
 .customer-says-row {
@@ -1087,9 +1093,7 @@ header li a {
     cursor: pointer;
 }
 .customer-says-stat {
-    display: flex;
-    flex-direction: column;
-    padding: 2em 3em 2em 3em;
+    padding: 2em 4.5em 2em 4.5em;
     margin-top: 1.5rem;
     background-color: #e4594d;
 }
@@ -1097,16 +1101,45 @@ header li a {
     font-size: 2.7rem;
     font-weight: 500;
     color: white;
+    margin-bottom: 85px;
 }
-.customer-says-stat-info {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
+.customer-says-stat-info-heading-1 {
+    position: relative;
     color: white;
-    font-size:3rem;
+    font-size: 4rem;
     font-weight: 500;
 }
-
+.customer-says-heading-1-before-after {
+    margin-right: 100px;
+}
+.customer-says-heading-1-before-after::before {
+    content: "People";
+    position: absolute;
+    bottom: 90px;
+    font-size: 1.4rem;
+}
+.customer-says-heading-1-before-after::after {
+    content: "Adipiscing elit, sed do eiusm.";
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    font-size: 1rem;
+    color: #e2e2e2;
+}
+.customer-says-heading-2-before-after::before {
+    content: "Year";
+    position: absolute;
+    bottom: 90px;
+    font-size: 1.4rem;
+}
+.customer-says-heading-2-before-after::after {
+    content: "Sed do eiusmod tempor.";
+    position: absolute;
+    left: 55.5%;
+    bottom: -35px;
+    font-size: 1rem;
+    color: #e2e2e2;
+}
 .clients {
     padding: 10em;
 }
