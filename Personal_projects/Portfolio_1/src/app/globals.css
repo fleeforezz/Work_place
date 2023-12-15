@@ -54,6 +54,15 @@
   animation: bounce 2s infinite;
 }
 
+.noise {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.nav-noise {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
 .about-me:focus,
 .about-me:hover {
     color: black;
