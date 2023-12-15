@@ -49,7 +49,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute top-[90%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-                <a href="" className="text-black px-3 py-4 border-2 border-black rounded-[20px]"></a>
+                <a href="" className="text-black px-3 py-2 border-2 border-black rounded-[20px]"></a>
                 <span className="absolute bg-black px-[4px] py-[4px] rounded-full top-[40%] left-[40%] -translate-x-[50%] -translate-y-[70%] animate-bounce"></span>
             </div>
         </section>
