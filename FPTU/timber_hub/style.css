@@ -12,11 +12,17 @@ body {
   line-height: 1.2rem;
 }
 
+header {
+  background-color: #F9F1E6;
+  min-height: 80vh;
+}
+
 .nav-bar {
   display: flex;
-  gap: 2rem;
+  gap: 0rem;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
   background-color: transparent;
 }
 
@@ -41,7 +47,7 @@ body {
 
 .menu {
   display: flex;
-  gap: 2.4rem;
+  gap: 40px;
   align-items: center;
 }
 
@@ -58,8 +64,29 @@ body {
 form {
   display: flex;
   align-items: center;
+  padding: 10px 475px 10px 10px;
+  gap: 1rem;
+  background-color: white;
 }
 
 .search-bar input {
   border: none;
+  outline: none;
+}
+
+.nav-product,
+.nav-room,
+.nav-inspiration {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.user-menu a {
+  text-decoration: none;
 }
