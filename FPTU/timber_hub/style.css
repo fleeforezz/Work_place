@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.main-logo {
+  display: flex;
+  gap: 0.7rem;
+  text-decoration: none;
+  align-items: center;
+}
+
+.img-logo {
+  width: 68px;
+  height: 54px;
+}
+
+.text-logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #3A3A3A;
+}
+
+.inside-menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  border: none;
+}
