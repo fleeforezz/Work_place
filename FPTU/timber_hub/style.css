@@ -9,12 +9,18 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  line-height: 1.2rem;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #F9F1E6;
   min-height: 80vh;
+  background: linear-gradient(
+    to right,
+    #F9F1E6 0%,
+    #F9F1E6 70%,
+    #FCF8F3 50%,
+    #FCF8F3 100%
+  );
 }
 
 .nav-bar {
@@ -64,7 +70,7 @@ header {
 form {
   display: flex;
   align-items: center;
-  padding: 10px 475px 10px 10px;
+  padding: 10px 475px 10px 20px;
   gap: 1rem;
   background-color: white;
 }
@@ -89,4 +95,51 @@ form {
 
 .user-menu a {
   text-decoration: none;
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 3rem;
+  width: 494px;
+  height: 553px;
+  top: 72%;
+  left: 32%;
+  transform: translate(-100%, -100%);
+  overflow-y: hidden;
+}
+
+.hero-intro h2 {
+  font-size: 3.5rem;
+  color: #3A3A3A;
+}
+
+.hero-intro p {
+  width: 85%;
+  color: #898989;
+  font-size: 1.25rem;
+}
+
+.shop-now {
+  /* margin-top: 40px; */
+  text-decoration: none;
+  color: white;
+  background-color: #E89F71;
+  padding: 25px;
+  text-align: center;
+}
+
+.slide-picture {
+  display: flex;
+  gap: 2.125rem;
+  margin-top: 90px;
+}
+
+.slide-picture img {
+  width: 830.163px;
+  height: 553px;
+  object-fit: cover;
 }
