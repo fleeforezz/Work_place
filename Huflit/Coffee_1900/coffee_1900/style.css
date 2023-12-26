@@ -18,13 +18,10 @@ body {
 /* LEFT NAVIGATION BAR */
 .navigation-bar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 17rem;
-    z-index: 1;
-    padding: 1em;
-    width: 100%;
+    padding: 0.7em;
     background-color: #f2ede0;
     align-items: center;
+    justify-content: space-between;
 }
 header ul {
     position: relative;
@@ -43,6 +40,7 @@ header li a {
 .logo {
     display: flex;
     flex-direction: row;
+    gap: 0.9rem;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -54,8 +52,7 @@ header li a {
     text-transform: uppercase;
 }
 .navigation-bar img {
-    width: 17%;
-    margin-right: 10px;
+    width: 64px;
 }   
 .nav-home::after {
     content: "";
@@ -294,11 +291,11 @@ header li a {
 .dropdown-6:hover::after {
     margin-left: 10px;
 }
+.search-shop-signup {
+    display: flex;
+}
 .search-shop-signup-child {
     display: flex;
-    gap: 1.7rem;
-    flex-wrap: nowrap;
-    margin-left: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -402,7 +399,6 @@ header li a {
     margin-left: 10px;
 }
 
-
 .location {
     position: relative;
     font-size: 1.5rem;
@@ -414,39 +410,10 @@ header li a {
 .location:hover {
     opacity: 80%;
 }
-.signup {
-    position: relative;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 1em 1em;
-    background-color: #e4594d;
-    color: white; 
-    cursor: pointer;
-    transition-duration: 400ms;
-}
-.signup:focus,
-.signup:hover {
-    background-color: #e63828;
-}
-.login {
-    position: relative;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 1em 1em;
-    background-color: transparent;
-    border: 1px solid #e4594d;
-    color: #e4594d; 
-    cursor: pointer;
-    transition-duration: 250ms;
-}
-.login:focus,
-.login:hover {
-    background-color: #e4594d;
-    color: white;
+
+.shop,
+.location {
+    padding: 10px;
 }
 
 /*TODO: COFFEE SHOP SECTION */
@@ -522,7 +489,7 @@ header li a {
     gap: 4rem;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 2em;
 }
 .quality-items {

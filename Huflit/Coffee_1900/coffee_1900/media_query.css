@@ -1,0 +1,50 @@
+@media (max-width: 1600px) {
+    .master-coffee {
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .master-section-para {
+        width: 100%;
+        min-width: 100%;
+        color: #6e6e6e;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 40px;
+        line-height: 1.7;
+    }
+    .quality-card {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .quality-card {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .master-section-para {
+        width: 100%;
+        min-width: 100%;
+        color: #6e6e6e;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0px;
+        line-height: 1.7;
+    }
+    .master-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 0em;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-bottom: 0px;
+        gap: 3rem;
+        background-color: #f2ede0;
+        align-items: center;
+        justify-content: center;
+    }
+}
