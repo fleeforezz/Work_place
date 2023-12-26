@@ -2,4 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #FAFAF9;
+  min-height: 100vh;
+}
+
+.outline-text {
+  font: 800 8.5rem Inter, Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+}
+
 

@@ -1,7 +1,11 @@
-import Image from 'next/image'
+import Aboutme from '@/components/layout/About-me'
+import Hero from '@/components/layout/Hero'
 
 export default function Home() {
   return (
-    <h1>Hello</h1>
+    <>
+      <Hero />
+      {/* <Aboutme /> */}
+    </>
   )
 }
