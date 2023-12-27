@@ -3,8 +3,8 @@ import { HandPointing } from "@phosphor-icons/react"
 
 export default function Footer() {
     return (
-        <section className="px-5 pb-3 pt-32">
-            <div className="flex max-md:flex-wrap justify-between">
+        <section className="px-5 pb-3 pt-32 max-md:pt-12">
+            <div className="flex max-md:flex-wrap-reverse justify-between">
                 <h1>
                     <span className="font-light text-sm">@2023 </span>
                     Nhat

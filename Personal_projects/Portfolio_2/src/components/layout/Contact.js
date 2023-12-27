@@ -17,29 +17,31 @@ export default function Contact() {
                         <br></br>
                         Let's bring it to life.
                     </h1>
-                    <p className="text-3xl max-md:text-[6vw] mt-10">
+                    <p className="text-3xl max-md:text-[6vw] mt-10 mb-10">
                         Changing and adapting new things
                         is my calling.
                     </p>
+                <img src="/image.gif" className="w-[100%]" />
                 </div>
                 
-                <img src="/image.gif" className="w-[100%]" />
 
-                <div>
+                <div className="max-md:w-[100%] max-md:px-5">
                     <div>
-                        <h2 className="text-3xl font-semibold">Contact Detailed</h2>
-                        <div className="text-2xl text-gray-500 mt-3">
+                        <h2 className="text-[1.875vw] max-md:text-[4.5vw] font-semibold">
+                            Contact Detailed
+                        </h2>
+                        <div className="text-[1.5vw] max-md:text-[3.5vw] text-gray-500 mt-3">
                             <h3>
                                 nhattruong.tmn@gmail.com
                             </h3>
                         </div>
                     </div>
 
-                    <div className="mt-10">
-                        <h2 className="text-3xl font-semibold">
+                    <div className="mt-10 max-md:mt-5">
+                        <h2 className="text-[1.875vw] max-md:text-[4.5vw] font-semibold">
                             My Digital Spaces
                         </h2>
-                        <div className="text-2xl text-gray-500 mt-5">
+                        <div className="text-[1.5vw] max-md:text-[3.5vw] text-gray-500 mt-5">
                             <a href="" className="flex gap-2">
                                 <GithubLogo size={36} color="#0a0a0a" />
                                 <span className="github relative">

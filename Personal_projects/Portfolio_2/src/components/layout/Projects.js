@@ -43,7 +43,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 pl-6 max-md:pl-0 max-md:grid-cols-1">
+            <div className="grid grid-cols-2 pl-6 max-md:pl-0 md:pl-[5rem] max-md:grid-cols-1">
                 <div className="max-md:px-5">
                     <div className="pt-10 max-md:pt-7">
                         <div className="flex w-[100%] max-w-[950px] max-h-[2000px] mt-10 overflow-hidden transition-all hover:rounded-3xl">
