@@ -7,16 +7,16 @@ export default function Header() {
             </div>
 
             <div className="flex gap-5 items-center max-md:hidden">
-                <a href="#about">
+                <a href="#about" className="about relative">
                     About
                 </a>
-                <a href="#services">
+                <a href="#services" className="service relative">
                     Services
                 </a>
-                <a href="#projects">
+                <a href="#projects" className="project relative">
                     Projects
                 </a>
-                <a href="#contact" className="px-8 py-3 bg-[#262626] text-white rounded-full">
+                <a href="#contact" className="talk relative px-8 py-3 bg-[#262626] text-white rounded-full">
                     Let's Talk
                 </a>
             </div>

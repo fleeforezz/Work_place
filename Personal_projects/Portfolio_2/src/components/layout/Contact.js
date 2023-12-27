@@ -37,15 +37,15 @@ export default function Contact() {
                         <div className="text-2xl text-gray-500 mt-5">
                             <a href="" className="flex gap-2">
                                 <GithubLogo size={36} color="#0a0a0a" />
-                                Github
+                                <span className="github relative">Github</span>
                             </a>
-                            <a href="" className="flex gap-2 mt-5 mb-5">
+                            <a href="" className="linkedin flex gap-2 mt-5 mb-5">
                                 <LinkedinLogo size={36} color="#0a0a0a" />
-                                LinkedIn
+                                <span className="linkedin relative">LinkedIn</span>
                             </a>
-                            <a href="" className="flex gap-2">
+                            <a href="" className="insta flex gap-2">
                                 <InstagramLogo size={36} color="#0a0a0a" />
-                                Instagram
+                                <span className="insta relative">Instagram</span>
                             </a>
                         </div>
                     </div>

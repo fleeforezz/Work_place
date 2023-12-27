@@ -11,7 +11,7 @@ export default function Footer() {
                 </h1>
 
                 <h2>
-                    Site designed by Huy and coded by Nhat 🦖
+                    Site designed by <span className="font-semibold">Huy</span> and coded by <span className="font-semibold">Nhat</span> 🦖
                 </h2>
 
                 <a href="#hero" className="font-bold flex gap-2 items-center transition-button hover:-translate-y-2">
