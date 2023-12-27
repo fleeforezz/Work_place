@@ -9,7 +9,7 @@ export const theme = {
     colors: {
     },
     cursor: {
-      // 'default': 'url(/cursor-default.png), default',
+      'default': 'url(/dot-outline-fill.svg), default',
     }
   },
 };

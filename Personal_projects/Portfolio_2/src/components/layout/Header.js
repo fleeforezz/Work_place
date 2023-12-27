@@ -6,14 +6,14 @@ export default function Header() {
                     Nhat Truong</a>
             </div>
 
-            <div className="flex gap-5 items-center max-md:hidden">
-                <a href="#about" className="about relative">
+            <div className="flex gap-5 items-center">
+                <a href="#about" className="about relative max-md:hidden">
                     About
                 </a>
-                <a href="#services" className="service relative">
+                <a href="#services" className="service relative max-md:hidden">
                     Services
                 </a>
-                <a href="#projects" className="project relative">
+                <a href="#projects" className="project relative max-md:hidden">
                     Projects
                 </a>
                 <a href="#contact" className="talk relative px-8 py-3 bg-[#262626] text-white rounded-full">

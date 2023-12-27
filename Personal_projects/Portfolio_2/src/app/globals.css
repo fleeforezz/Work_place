@@ -3,39 +3,41 @@
 @tailwind utilities;
 
 body {
-  background-color: #FAFAF9;
-  min-height: 100vh;
-  overflow-x: hidden;
+    background-color: #FAFAF9;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .outline-text {
-  font: 800 8.5rem Inter, Arial;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px;
+    font: 800 10vw Inter, Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
 }
 
 .transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 550ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 550ms;
 }
 
 .transition-button {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 }
 
 .about:focus,
 .about:hover {
     color: black;
 }
+
 .about:focus::after,
 .about:hover::after {
     width: 100%;
     left: 0%;
     transition: 300ms;
 }
+
 .about::after {
     content: "";
     position: absolute;
@@ -53,12 +55,14 @@ body {
 .service:hover {
     color: black;
 }
+
 .service:focus::after,
 .service:hover::after {
     width: 100%;
     left: 0%;
     transition: 300ms;
 }
+
 .service::after {
     content: "";
     position: absolute;
@@ -76,12 +80,14 @@ body {
 .project:hover {
     color: black;
 }
+
 .project:focus::after,
 .project:hover::after {
     width: 100%;
     left: 0%;
     transition: 300ms;
 }
+
 .project::after {
     content: "";
     position: absolute;
@@ -99,12 +105,14 @@ body {
 .talk:hover {
     color: white;
 }
+
 .talk:focus::after,
 .talk:hover::after {
     width: 59%;
     left: 20%;
     transition: 300ms;
 }
+
 .talk::after {
     content: "";
     position: absolute;
@@ -124,6 +132,7 @@ body {
     left: 0%;
     transition: 300ms;
 }
+
 .github::after {
     content: "";
     position: absolute;
@@ -143,6 +152,7 @@ body {
     left: 0%;
     transition: 300ms;
 }
+
 .linkedin::after {
     content: "";
     position: absolute;
@@ -162,6 +172,7 @@ body {
     left: 0%;
     transition: 300ms;
 }
+
 .insta::after {
     content: "";
     position: absolute;
@@ -174,4 +185,3 @@ body {
     transition-duration: 400ms;
     transition-property: width, left;
 }
-

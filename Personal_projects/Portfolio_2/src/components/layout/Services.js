@@ -4,13 +4,13 @@ import { Atom } from "@phosphor-icons/react"
 export default function Services() {
     return (
         <section id="services" className="px-20">
-            <h1 className="flex gap-3 justify-center items-center font-medium text-center text-[#8c8c73] text-9xl pt-24 pb-10">
+            <h1 className="flex gap-3 justify-center items-center font-medium text-center text-[#8c8c73] text-[8vw] pt-24 pb-10">
                 <Atom size={36} color="#8c8c73" />
                 SERVICES
                 <Atom size={36} color="#8c8c73" />
             </h1>
 
-            <div className="grid grid-cols-2 gap-24">
+            <div className="grid grid-cols-2 gap-24 max-md:grid-cols-1">
                 <div>
                     <h2 className="font-bold text-7xl">
                         my expertises.
