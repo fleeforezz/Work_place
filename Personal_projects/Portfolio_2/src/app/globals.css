@@ -5,12 +5,25 @@
 body {
   background-color: #FAFAF9;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .outline-text {
   font: 800 8.5rem Inter, Arial;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 3px;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 550ms;
+}
+
+.transition-button {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 
