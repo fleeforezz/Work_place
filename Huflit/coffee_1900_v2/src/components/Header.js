@@ -4,11 +4,11 @@ import { MapPinLine } from "@phosphor-icons/react"
 
 export default function Header() {
     return (
-        <nav className="flex justify-between bg-[#f1ece0] items-center px-12 py-5">
-            <div className="flex gap-3 items-center">
+        <nav className="flex justify-between bg-[#f1ece0] items-center px-16 py-4">
+            <a href="" className="flex gap-3 items-center">
                 <img src="/coffee.png" className="w-[64px]" />
                 <h1 className="text-3xl font-semibold">Coffee 1900</h1>
-            </div>
+            </a>
 
             <ul className="flex gap-10">
                 <li>
@@ -25,14 +25,18 @@ export default function Header() {
                 </li>
             </ul>
 
-            <div className="flex gap-5">
+            <div className="flex gap-5 items-center">
                 <a href="">
                     <ShoppingCart size={24} />
                 </a>
                 <a href="">
                     <MapPinLine size={24} />
                 </a>
+                <a href="" className="bg-[#e4594d] px-5 py-3 text-white">
+                    About Us
+                </a>
             </div>
+
         </nav>
     )
 }
