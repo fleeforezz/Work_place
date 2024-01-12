@@ -32,7 +32,7 @@ export default function Header() {
                 <a href="">
                     <MapPinLine size={24} />
                 </a>
-                <a href="" className="bg-[#e4594d] px-5 py-3 text-white">
+                <a href="" className="bg-[#e4594d] px-5 py-3 text-white transition-all hover:bg-[#f15f52]">
                     About Us
                 </a>
             </div>
