@@ -195,7 +195,7 @@ body {
 
 .sale-card-1 {
     background: url(/public/juice.png) 50% / cover no-repeat;
-    width: 30%;
+    width: 40%;
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 16px;
@@ -216,7 +216,7 @@ body {
 
 .sale-card-2 {
     background: url(/public/fruit.png) 10% / cover no-repeat;
-    width: 30%;
+    width: 40%;
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 16px;
@@ -448,6 +448,7 @@ body {
 .item-img {
     width: 335px;
     height: 324px;
+    object-fit: contain;
     mix-blend-mode: multiply;
 }
 
