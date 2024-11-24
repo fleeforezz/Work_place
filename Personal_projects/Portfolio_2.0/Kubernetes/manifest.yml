@@ -1,0 +1,65 @@
+---
+#Persistent Volume
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: portfolio-pvc
+# spec:
+#   accessModes:
+#     - ReadWriteMany
+#   storageClassName: longhorn
+#   resources:
+#     requests:
+#       storage: 2Gi
+
+---
+# Deployment Object
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-deployment
+spec:
+  selector:
+    matchLabels:
+      app: portfolio
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: portfolio
+    spec:
+      containers:
+      - name: portfolio
+        image: fleeforezz/portfolio
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1000Mi"
+          requests:
+            cpu: "500m"
+            memory: "750Mi"
+        # volumeMounts:
+        # - mountPath: "/"
+        #   name: portfolio-storage
+        ports:
+        - containerPort: 9463
+      # volumes:
+      # - name: portfolio-storage
+      #   persistentVolumeClaim:
+      #     claimName: portfolio-pvc
+      automountServiceAccountToken: false
+
+---
+# Service Object
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-service
+spec:
+  selector:
+    app: portfolio
+  type: NodePort
+  ports:
+    - port: 9463
+      targetPort: 9463
+      nodePort: 32500
