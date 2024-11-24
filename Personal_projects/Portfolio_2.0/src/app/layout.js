@@ -37,6 +37,17 @@ export default function RootLayout({ children }) {
         <link rel="icon" sizes="any" href="/avatar.jpg" />
       </head>
       <body className={chillax.className}>
+        {/* <svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' id='noise'>
+          <filter id='noiseFilter'>
+            <feTurbulence
+              type='fractalNoise'
+              baseFrequency='4.75'
+              numOctaves='1'
+              stitchTiles='stitch' />
+          </filter>
+
+          <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+        </svg> */}
         {children}
       </body>
     </html>

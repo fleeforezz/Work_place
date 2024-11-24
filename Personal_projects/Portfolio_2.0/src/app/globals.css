@@ -33,6 +33,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* #noise {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  mix-blend-mode: multiply;
+} */
+
 /* body,
 a,
 button {
@@ -68,6 +75,47 @@ button {
 .name::after {
   display: inline-block;
   width: 100%;
+}
+
+#hero {
+  animation: appear ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 100% cover 100%;
+}
+@keyframes appear {
+  from {
+    opacity: 100%;
+    /* scale: 1; */
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0%;
+    /* scale: 0.95; */
+    transform: translateY(10%);
+  }
+}
+
+#service {
+  border-radius: 1rem 1rem 0 0;
+}
+
+#about {
+  border-radius: 0 0 1rem 1rem;
+  animation: zoomout ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 100% cover 100%;
+}
+@keyframes zoomout {
+  from {
+    opacity: 100%;
+    scale: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 100%;
+    scale: 0.95;
+    transform: translateY(-10%);
+  }
 }
 
 .outline-text {

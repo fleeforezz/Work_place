@@ -1,11 +1,11 @@
 "use client"
-import Aboutme from '@/components/layout/About-me'
+import Services from '@/components/layout/Services'
 import Contact from '@/components/layout/Contact'
 import Footer from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
 import Hero from '@/components/layout/Hero'
 import Projects from '@/components/layout/Projects'
-import Services from '@/components/layout/Services'
+import Aboutme from '@/components/layout/About-me'
 import StickyCursor from '@/components/stickyCursor/StickyCursor'
 
 import { useEffect, useState } from 'react';
@@ -44,9 +44,9 @@ export default function Home() {
       </AnimatePresence>
       <Navbar />
       <Hero />
-      <Aboutme />
       <Services />
       <Projects />
+      <Aboutme />
       <Contact />
       <Footer />
     </>

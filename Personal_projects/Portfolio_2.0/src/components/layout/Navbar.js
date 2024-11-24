@@ -63,7 +63,7 @@ export default function Header() {
             animate="visible"
         >
             <div className="flex">
-                <a href="#hero" className="font-bold text-xl">
+                <a href="/" className="font-bold text-xl">
                     Nhat Truong
                 </a>
             </div>
