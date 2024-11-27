@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-background: #0e0e0c;
+  --dark-foreground: #9e9a93;
+
+  --dark-hover-foreground: #0e0e0c;
+
+  --heading: #d1d1c7;
+  --title: #777169;
+
+  --icon: #403f3a;
+  --button-active: #fffee3;
+  --border: #3a3733;
+
+  --light-background: #e8e8e3;
+  --light-foreground: #3a3733;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0e0e0c;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--dark-foreground);
+  background: var(--dark-background);
+  margin: 0;
+  padding: 0;
+}
+
+/*
+*****
+  Navigation bar 
+*****
+*/
+.heading::after {
+  content: "TMN";
+  color: var(--dark-foreground);
+  font-size: 0.8rem;
+  position: absolute;
+}
+
+.home {
+  position: relative;
+}
+.home::before {
+  content: "1";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.services {
+  position: relative;
+}
+.services::before {
+  content: "2";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.projects {
+  position: relative;
+}
+.projects::before {
+  content: "3";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.projects {
+  position: relative;
+}
+.projects::before {
+  content: "3";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.about {
+  position: relative;
+}
+.about::before {
+  content: "4";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.contact {
+  position: relative;
+}
+.contact::before {
+  content: "5";
+  color: var(--dark-foreground);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+a {
+  transition: 250ms;
+}
+a:hover {
+  background-color: var(--button-active);
+  color: var(--dark-hover-foreground);
+}
+
+
+/*
+*****
+  Hero section
+*****
+*/
+.container_1 {
+  position: relative;
+}
+.container_1::before {
+  content: "";
+  position: absolute;
+  padding: 19px 40px 0px 20px;
+  top: 11.5px;
+  left: 0;
+  background-color: var(--heading);
+}
+.container_1::after {
+  content: "";
+  position: absolute;
+  /* padding: 19px 1000px 0px 20px; */
+  padding: 7.5px;
+  width: 80%;
+  bottom: 11px;
+  left: 380px;
+  background-color: var(--heading);
+}
+
+.container_2 {
+  position: relative;
+  height: 199px;
+}
+.location {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
