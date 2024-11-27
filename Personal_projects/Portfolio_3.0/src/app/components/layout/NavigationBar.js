@@ -1,6 +1,6 @@
 export default function NavigationBar() {
     return (
-        <header className="grid grid-cols-12">
+        <header className="nav-container grid grid-cols-12">
             <h1 className="heading col-span-2 px-[30px] text-center py-[30px] border border-[--border] font-bold text-[1.5vw] text-[--heading]">
                 Nhat Truong
             </h1>

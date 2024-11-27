@@ -5,7 +5,6 @@
 :root {
   --dark-background: #0e0e0c;
   --dark-foreground: #9e9a93;
-
   --dark-hover-foreground: #0e0e0c;
 
   --heading: #d1d1c7;
@@ -31,6 +30,7 @@ body {
   background: var(--dark-background);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /*
@@ -56,6 +56,30 @@ body {
   bottom: 10px;
   left: 20px;
 }
+.home:focus,
+.home:hover {
+  color: var(--dark-background);
+  transition: 300ms;
+}
+.home:focus::after,
+.home:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
+}
 
 .services {
   position: relative;
@@ -68,6 +92,30 @@ body {
   bottom: 10px;
   left: 20px;
 }
+.services:focus,
+.services:hover {
+  color: var(--dark-background);
+  transition: 300ms;
+}
+.services:focus::after,
+.services:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
+}
 
 .projects {
   position: relative;
@@ -80,17 +128,29 @@ body {
   bottom: 10px;
   left: 20px;
 }
-
-.projects {
-  position: relative;
+.projects:focus,
+.projects:hover {
+  color: var(--dark-background);
+  transition: 300ms;
 }
-.projects::before {
-  content: "3";
-  color: var(--dark-foreground);
-  font-size: 1rem;
+.projects:focus::after,
+.projects:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.projects::after {
+  content: "";
   position: absolute;
-  bottom: 10px;
-  left: 20px;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
 }
 
 .about {
@@ -104,6 +164,30 @@ body {
   bottom: 10px;
   left: 20px;
 }
+.about:focus,
+.about:hover {
+  color: var(--dark-background);
+  transition: 300ms;
+}
+.about:focus::after,
+.about:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
+}
 
 .contact {
   position: relative;
@@ -116,15 +200,38 @@ body {
   bottom: 10px;
   left: 20px;
 }
+.contact:focus,
+.contact:hover {
+  color: var(--dark-background);
+  transition: 300ms;
+}
+.contact:focus::after,
+.contact:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
+}
 
-a {
+/* .nav-container > a {
   transition: 250ms;
 }
-a:hover {
+.nav-container > a:hover {
   background-color: var(--button-active);
   color: var(--dark-hover-foreground);
-}
-
+} */
 
 /*
 *****
@@ -157,8 +264,127 @@ a:hover {
   position: relative;
   height: 199px;
 }
+
+.sport-car {
+  position: absolute;
+  bottom: 3px;
+  left: 390px;
+  font-size: 3vw;
+  animation: 10s vrmm ease-in-out infinite;
+}
+@keyframes vrmm {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
 .location {
   position: absolute;
   bottom: 0;
-  left: 350px;
+  left: 20%;
+}
+
+.more {
+  transition: 250ms;
+}
+.more:hover {
+  background-color: var(--button-active);
+  color: black;
+}
+
+/*
+*****
+  Seperator
+*****
+*/
+.section-seperator {
+  padding: 0.5px;
+  background-color: var(--border);
+}
+
+/*
+*****
+  Animation define
+*****
+*/
+
+/* spin */
+@keyframes spin {
+  0% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(12deg);
+  }
+}
+.animate-spin {
+  animation: spin 8s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+/* bounce */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%) rotate(12deg);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: rotate(-12deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate-bounce {
+  animation: bounce 3s infinite;
+}
+
+/* shake */
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.animate-shake {
+  animation: shake 1s infinite;
 }
