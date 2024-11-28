@@ -4,19 +4,22 @@ export default function NavigationBar() {
             <h1 className="heading col-span-2 px-[30px] text-center py-[30px] border border-[--border] font-bold text-[1.5vw] text-[--heading]">
                 Nhat Truong
             </h1>
-            <a href="/" className="home flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
+            <a href="/" className="home flex items-center justify-center col-span-1 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
                 Home
             </a>
-            <a href="#services" className="services flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
+            <a href="#services" className="services flex items-center justify-center col-span-1 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
                 Services
             </a>
-            <a href="#projects" className="projects flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
+            <a href="#digital-box" className="digital_box flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
+                Digital Box
+            </a>
+            <a href="#projects" className="projects flex items-center justify-center col-span-1 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
                 Projects
             </a>
             <a href="#about" className="about flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
                 About
             </a>
-            <a href="contact" className="contact flex items-center justify-center col-span-2 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
+            <a href="#contact" className="contact flex items-center justify-center col-span-3 px-[30px] py-[30px] border border-[--border] text-[0.8vw]">
                 Contact
             </a>
         </header>

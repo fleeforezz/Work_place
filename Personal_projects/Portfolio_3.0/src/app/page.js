@@ -8,6 +8,7 @@ import Services from "./components/layout/Services";
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion'
 import Preloader from "./components/PreloaderPage/Preloader";
+import DigitalBox from "./components/layout/DigitalBox";
 
 
 export default function Home() {
@@ -42,6 +43,7 @@ export default function Home() {
       <NavigationBar />
       <Hero />
       <Services />
+      <DigitalBox />
       <Projects />
       <About />
     </main>
