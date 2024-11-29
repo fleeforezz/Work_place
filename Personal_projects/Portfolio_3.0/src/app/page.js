@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion'
 import Preloader from "./components/PreloaderPage/Preloader";
 import DigitalBox from "./components/layout/DigitalBox";
+import ChangeBackground from "./components/ChangeBgColor/ChangeBackground";
+import Contact from "./components/layout/Contact";
 
 
 export default function Home() {
@@ -40,12 +42,14 @@ export default function Home() {
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
+      <ChangeBackground />
       <NavigationBar />
       <Hero />
       <Services />
       <DigitalBox />
       <Projects />
       <About />
+      <Contact />
     </main>
   );
 }

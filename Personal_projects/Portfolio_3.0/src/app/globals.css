@@ -16,19 +16,11 @@
   --border: #3a3733;
 
   --light-background: #e8e8e3;
-  --light-foreground: #3a3733;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0e0e0c;
-    --foreground: #ededed;
-  }
+  --light-foreground: #3A3733;
 }
 
 body {
   color: var(--dark-foreground);
-  /* background: var(--dark-background); */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -281,7 +273,6 @@ body {
 .container_1::after {
   content: "";
   position: absolute;
-  /* padding: 19px 1000px 0px 20px; */
   padding: 7.5px;
   width: 80%;
   bottom: 11px;

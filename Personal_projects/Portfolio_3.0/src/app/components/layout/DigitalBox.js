@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DigitalBox() {
     return (
-        <section id="digital-box" className="relative px-[20px] pt-[25px] pb-[175px] bg-[--dark-background]">
+        <section id="digital-box" className="relative px-[20px] pt-[25px] pb-[175px]">
             <div className="grid grid-cols-12">
                 <div className="relative col-span-6">
                     <h1 className="digital-heading text-[9vw] text-[--heading] leading-[9.6rem] font-bold">
