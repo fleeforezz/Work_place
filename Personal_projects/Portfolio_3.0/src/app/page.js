@@ -11,6 +11,7 @@ import Preloader from "./components/PreloaderPage/Preloader";
 import DigitalBox from "./components/layout/DigitalBox";
 import ChangeBackground from "./components/ChangeBgColor/ChangeBackground";
 import Contact from "./components/layout/Contact";
+import Footer from "./components/layout/Footer";
 
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </main>
   );
 }

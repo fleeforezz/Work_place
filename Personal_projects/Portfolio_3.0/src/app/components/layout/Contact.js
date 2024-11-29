@@ -26,6 +26,32 @@ export default function Contact() {
                     </a>
                 </div>
             </div>
+
+            <div className="grid grid-cols-12 gap-[1rem] py-[100px]">
+                <div className="col-span-5 flex flex-col gap-[1rem]">
+                    <h1 className="text-[3vw] text-[--light-foreground] font-bold leading-[4rem]">Menu</h1>
+                    <div className="section-seperator"></div>
+                    <div className="flex flex-col gap-[0.5rem]">
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Home</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Services</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Digital Box</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Projects</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">About</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Contact</a>
+                    </div>
+                </div>
+
+                <div className="col-span-7 flex flex-col gap-[1rem]">
+                    <h1 className="text-[3vw] text-[--light-foreground] font-bold leading-[4rem]">Socials</h1>
+                    <div className="section-seperator"></div>
+                    <div className="flex flex-col gap-[0.5rem]">
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Github</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Gitlab</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">LinkedIn</a>
+                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Instagram</a>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 };
