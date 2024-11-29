@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function DigitalBox() {
     return (
-        <section id="digital-box" className="px-[20px]">
+        <section id="digital-box" className="relative px-[20px]">
             <div className="grid grid-cols-12">
                 <div className="relative col-span-6">
-                    <h1 className="digital-heading text-[9vw] text-[--heading] leading-[9.5rem] font-bold">
+                    <h1 className="digital-heading text-[9vw] text-[--heading] leading-[9.6rem] font-bold">
                         My digital <br></br>
                         tool box \
                     </h1>
@@ -22,6 +24,86 @@ export default function DigitalBox() {
                     </p>
                 </div>
             </div>
+
+            <div className="grid grid-cols-12 grid-row-9 mt-[100px]">
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Java
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        C# / .NET
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        MySQL
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        AWS
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Docker
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Kubernetes
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Gitlab CI
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Jenkins
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+                <div className="hover_effect col-span-12">
+                    <h2 className="pl-[20px] text-[5vw] font-bold leading-[6rem] uppercase">
+                        Ansible
+                    </h2>
+                </div>
+
+                <div className="section-seperator col-span-12"></div>
+
+            </div>
+
+            <Image src={"/earth.png"} width={800} height={800} alt="earth" className="absolute -z-10 top-[38%] left-[30%]"/>
+
         </section>
     )
 };

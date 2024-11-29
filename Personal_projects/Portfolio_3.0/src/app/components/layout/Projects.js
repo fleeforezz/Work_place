@@ -1,6 +1,28 @@
 export default function Projects() {
     return (
-        <section>
+        <section id="projects" className="px-[20px] pt-[200px]">
+            <div className="grid grid-cols-12">
+                <div className="relative col-span-6">
+                    <h1 className="project-heading text-[9vw] text-[--heading] leading-[9.6rem] font-bold">
+                        Selected <br></br>
+                        Works \
+                    </h1>
+                </div>
+                <div className="col-span-4 col-start-8 relative flex items-center">
+                    <p className="text-[1.2vw]">
+                        Optimizing software delivery, <br></br>
+                        improving infrastructure scalability <br></br>
+                        and reliability, fostering collaboration, <br></br>
+                        and driving innovation to deliver <br></br>
+                        value. I am eager to tackle the <br></br>
+                        evolving challenges in this field. <br></br>
+                    </p>
+                    <p className="absolute bottom-0 right-0 text-[--title] uppercase">
+                        (Projects)
+                    </p>
+                </div>
+            </div>
+
             {projects.map((project, index) => (
                 <ProjectCard key={index} {...project} />
             ))}
@@ -21,7 +43,7 @@ const ProjectCard = ({ number, image, title, description, tags, year }) => (
         <div>
             <img src={image} alt={title} loading="lazy" className="will-change-transform" />
             <div className="mt-[15px]">
-                <p className="text-[#a19e9b] text-[1.2rem]">
+                <p className="text-[#a19e9b] text-[1rem]">
                     {description}
                 </p>
                 <div className="flex justify-between items-center">
@@ -58,7 +80,7 @@ const projects = [
         number: "02",
         image: "/Espresso.svg",
         title: "Espresso",
-        description: "Online Reading & Sell Books",
+        description: "E-commerce & Coffee bean shop",
         tags: ["Design", "Full-Stack Development", "2024"],
         year: "2024"
     },
@@ -66,16 +88,16 @@ const projects = [
         number: "03",
         image: "/Clinic_Booking.svg",
         title: "Clinic Booking",
-        description: "Online Reading & Sell Books",
-        tags: ["Design", "Full-Stack Development", "2024"],
+        description: "Online Clinic Booking & Desktop App",
+        tags: ["Design", "Front-end Development", "2024"],
         year: "2024"
     },
     {
         number: "04",
         image: "/HomeLab.svg",
         title: "HomeLab",
-        description: "Online Reading & Sell Books",
-        tags: ["Design", "Full-Stack Development", "2024"],
-        year: "2024"
+        description: "Self Hosting & Cloud & Testing",
+        tags: ["Design-Infrastructure", "DevOps Engineer", "2021"],
+        year: "2021"
     }
 ];

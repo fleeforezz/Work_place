@@ -8,7 +8,7 @@
   --dark-hover-foreground: #0e0e0c;
 
   --heading: #d1d1c7;
-  --sub-heading: #A19E9A;
+  --sub-heading: #a19e9a;
   --title: #777169;
 
   --icon: #403f3a;
@@ -340,6 +340,48 @@ body {
   position: absolute;
   top: -50px;
   right: -60px;
+  font-size: 6vw;
+  color: var(--sub-heading);
+}
+
+.hover_effect {
+  position: relative;
+}
+.hover_effect:focus,
+.hover_effect:hover {
+  color: var(--dark-background);
+  transition: 300ms;
+}
+.hover_effect:focus::after,
+.hover_effect:hover::after {
+  transform: scaleY(100%);
+  height: 100%;
+  transition: 300ms;
+}
+.hover_effect::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0%);
+  background-color: var(--button-active);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: height, top;
+  z-index: -1;
+}
+
+/*
+*****
+  Project Section
+*****
+*/
+.project-heading::after {
+  content: "(4)";
+  position: absolute;
+  top: -50px;
+  right: -40px;
   font-size: 6vw;
   color: var(--sub-heading);
 }
