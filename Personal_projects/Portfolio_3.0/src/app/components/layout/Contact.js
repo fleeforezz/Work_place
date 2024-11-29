@@ -2,7 +2,7 @@
 export default function Contact() {
     return (
         <section id="contact" className="px-[20px]">
-            <div className="p-[20px] border border-[--border]">
+            <div className="p-[50px] border border-[--border]">
                 <p className="text-[8vw] text-[--light-foreground] leading-[9rem] font-bold">
                     Interested in
                 </p>
@@ -14,7 +14,7 @@ export default function Contact() {
                     Contact now
                 </p>
 
-                <div className="flex gap-[2rem] py-[50px]">
+                <div className="flex gap-[1.5rem] py-[50px]">
                     <p className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
                         nhattruong.tmn@gmail.com
                     </p>
