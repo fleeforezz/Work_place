@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <section className="grid grid-cols-12">
-            <div className="col-span-10 border border-[--border]">
-                <h1 className="text-[4vw] text-[--light-foreground] font-bold p-[20px]">
+            <div className="relative col-span-10 border border-[--border]">
+                <h1 className="footer text-[4vw] text-[--light-foreground] font-bold p-[20px]">
                     2024 <br></br>
                     All right rerserved
                 </h1>

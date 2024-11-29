@@ -404,6 +404,17 @@ body {
 
 /*
 *****
+  Footer Section
+*****
+*/
+.footer::after {
+  content: "TMN";
+  position: absolute;
+  font-size: 1rem;
+}
+
+/*
+*****
   Seperator
 *****
 */
