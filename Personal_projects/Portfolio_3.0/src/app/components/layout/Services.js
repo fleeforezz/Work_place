@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Services() {
     return (
-        <section id="services" className="px-[20px] pt-[200px]">
+        <section id="services" className="px-[20px] pt-[200px] bg-[--dark-background]">
             <div className="grid grid-cols-12">
                 <div className="col-span-6">
                     <h1 className="text-[9vw] text-[--heading] leading-[9.5rem] font-bold">

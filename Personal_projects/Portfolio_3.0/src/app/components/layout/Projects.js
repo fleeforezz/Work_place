@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <section id="projects" className="px-[20px] pt-[200px]">
+        <section id="projects" className="px-[20px] pt-[25px] pb-[175px] bg-[--dark-background]">
             <div className="grid grid-cols-12">
                 <div className="relative col-span-6">
                     <h1 className="project-heading text-[9vw] text-[--heading] leading-[9.6rem] font-bold">

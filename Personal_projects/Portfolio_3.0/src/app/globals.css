@@ -28,7 +28,7 @@
 
 body {
   color: var(--dark-foreground);
-  background: var(--dark-background);
+  /* background: var(--dark-background); */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -384,6 +384,30 @@ body {
   right: -40px;
   font-size: 6vw;
   color: var(--sub-heading);
+}
+
+/*
+*****
+  About Section
+*****
+*/
+#about {
+  border-radius: 0 0 1rem 1rem;
+  animation: zoomout ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 100% cover 100%;
+}
+@keyframes zoomout {
+  from {
+    opacity: 100%;
+    scale: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 100%;
+    scale: 0.95;
+    transform: translateY(-10%);
+  }
 }
 
 /*

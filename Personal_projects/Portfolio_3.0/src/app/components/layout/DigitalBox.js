@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DigitalBox() {
     return (
-        <section id="digital-box" className="relative px-[20px]">
+        <section id="digital-box" className="relative px-[20px] pt-[25px] pb-[175px] bg-[--dark-background]">
             <div className="grid grid-cols-12">
                 <div className="relative col-span-6">
                     <h1 className="digital-heading text-[9vw] text-[--heading] leading-[9.6rem] font-bold">
@@ -102,7 +102,7 @@ export default function DigitalBox() {
 
             </div>
 
-            <Image src={"/earth.png"} width={800} height={800} alt="earth" className="absolute -z-10 top-[38%] left-[30%]"/>
+            <Image src={"/earth.png"} width={800} height={800} alt="earth" className="absolute -z-10 top-[30%] left-[30%]"/>
 
         </section>
     )
