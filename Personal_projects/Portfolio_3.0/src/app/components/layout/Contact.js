@@ -18,10 +18,10 @@ export default function Contact() {
                     <p className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
                         nhattruong.tmn@gmail.com
                     </p>
-                    <a href="" className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
+                    <a href="https://www.linkedin.com/in/nhattruongminh/" className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
                         LinkedIn
                     </a>
-                    <a href="" className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
+                    <a href="https://www.instagram.com/tmn_nhat/" className="w-fit px-[20px] py-[5px] rounded-full text-[1.5vw] text-[--light-foreground] font-semibold border border-[--border]">
                         Instagram
                     </a>
                 </div>
@@ -33,11 +33,11 @@ export default function Contact() {
                     <div className="section-seperator"></div>
                     <div className="flex flex-col gap-[0.5rem]">
                         <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Home</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Services</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Digital Box</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Projects</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">About</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Contact</a>
+                        <a href="#services" className="text-[1.2vw] text-[--light-foreground] font-semibold">Services</a>
+                        <a href="#digital-box" className="text-[1.2vw] text-[--light-foreground] font-semibold">Digital Box</a>
+                        <a href="#projects" className="text-[1.2vw] text-[--light-foreground] font-semibold">Projects</a>
+                        <a href="#about" className="text-[1.2vw] text-[--light-foreground] font-semibold">About</a>
+                        <a href="#contact" className="text-[1.2vw] text-[--light-foreground] font-semibold">Contact</a>
                     </div>
                 </div>
 
@@ -45,10 +45,10 @@ export default function Contact() {
                     <h1 className="text-[3vw] text-[--light-foreground] font-bold leading-[4rem]">Socials</h1>
                     <div className="section-seperator"></div>
                     <div className="flex flex-col gap-[0.5rem]">
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Github</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Gitlab</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">LinkedIn</a>
-                        <a href="#home" className="text-[1.2vw] text-[--light-foreground] font-semibold">Instagram</a>
+                        <a href="https://github.com/fleeforezz" target="_blank" className="text-[1.2vw] text-[--light-foreground] font-semibold">Github</a>
+                        <a href="https://gitlab.fleeforezz.site" target="_blank" className="text-[1.2vw] text-[--light-foreground] font-semibold">Gitlab</a>
+                        <a href="https://www.linkedin.com/in/nhattruongminh/" target="_blank"  className="text-[1.2vw] text-[--light-foreground] font-semibold">LinkedIn</a>
+                        <a href="https://www.instagram.com/tmn_nhat/" target="_blank" className="text-[1.2vw] text-[--light-foreground] font-semibold">Instagram</a>
                     </div>
                 </div>
             </div>

@@ -408,7 +408,7 @@ body {
 *****
 */
 .footer::after {
-  content: "TMN";
+  content: "TM";
   position: absolute;
   font-size: 1rem;
 }

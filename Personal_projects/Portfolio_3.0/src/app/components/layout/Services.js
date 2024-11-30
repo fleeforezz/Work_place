@@ -59,7 +59,7 @@ export default function Services() {
                                 02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Responsive Design
                             </p>
                         </div>
 
@@ -70,7 +70,7 @@ export default function Services() {
                                 03
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Scalability
                             </p>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ export default function Services() {
                                 01
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Consistent & validated codebase
                             </p>
                         </div>
 
@@ -112,7 +112,7 @@ export default function Services() {
                                 02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Scalability
                             </p>
                         </div>
 
@@ -123,7 +123,7 @@ export default function Services() {
                                 03
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Deliver high-quality software quickly
                             </p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ export default function Services() {
                                 01
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Automation
                             </p>
                         </div>
 
@@ -165,7 +165,7 @@ export default function Services() {
                                 02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Design Infrastructure
                             </p>
                         </div>
 
@@ -176,7 +176,7 @@ export default function Services() {
                                 03
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Motion & Animation
+                                Maintenance
                             </p>
                         </div>
                     </div>
