@@ -10,12 +10,10 @@ export default function Projects() {
                 </div>
                 <div className="col-span-4 col-start-8 relative flex items-center">
                     <p className="text-[1.2vw]">
-                        Optimizing software delivery, <br></br>
-                        improving infrastructure scalability <br></br>
-                        and reliability, fostering collaboration, <br></br>
-                        and driving innovation to deliver <br></br>
-                        value. I am eager to tackle the <br></br>
-                        evolving challenges in this field. <br></br>
+                        Here you can explore some of the projects I've worked on, 
+                        where I turn ideas into practical, easy-to-use solutions. 
+                        These projects demonstrate how I use the latest tools and 
+                        techniques to create meaningful results that solve real problems.
                     </p>
                     <p className="absolute bottom-0 right-0 text-[--title] uppercase">
                         (Projects)
@@ -31,7 +29,7 @@ export default function Projects() {
 };
 
 // Memoized project card component
-const ProjectCard = ({ number, image, title, description, tags, year }) => (
+const ProjectCard = ({ number, image, title, description, tags, year, link }) => (
     <div className="h-fit flex justify-between mt-[60px] will-change-transform">
         <div className="relative">
             <div className="sticky top-[20px] overflow-hidden">
@@ -40,7 +38,7 @@ const ProjectCard = ({ number, image, title, description, tags, year }) => (
                 </h2>
             </div>
         </div>
-        <div>
+        <a href={link} target="_blank">
             <img src={image} alt={title} loading="lazy" className="will-change-transform" />
             <div className="mt-[15px]">
                 <p className="text-[#a19e9b] text-[1rem]">
@@ -63,7 +61,7 @@ const ProjectCard = ({ number, image, title, description, tags, year }) => (
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
 );
 
@@ -73,31 +71,34 @@ const projects = [
         image: "/Bookery.svg",
         title: "Bookery",
         description: "Online Reading & Sell Books",
-        tags: ["Design", "Full-Stack Development", "2024"],
-        year: "2024"
+        tags: ["UI/UX Design", "Back-End Development", "2024"],
+        year: "2024",
+        link: "https://bookery.fleeforezz.site"
     },
     {
         number: "02",
         image: "/Espresso.svg",
         title: "Espresso",
         description: "E-commerce & Coffee bean shop",
-        tags: ["Design", "Full-Stack Development", "2024"],
-        year: "2024"
+        tags: ["UI/UX Design", "Back-End Development", "2024"],
+        year: "2024",
+        link: "https://espresso.fleeforezz.site"
     },
     {
         number: "03",
         image: "/Clinic_Booking.svg",
         title: "Clinic Booking",
         description: "Online Clinic Booking & Desktop App",
-        tags: ["Design", "Front-end Development", "2024"],
+        tags: ["UI/UX Design", "Back-End Development", "2024"],
         year: "2024"
     },
     {
         number: "04",
         image: "/HomeLab.svg",
         title: "HomeLab",
-        description: "Self Hosting & Cloud & Testing",
+        description: "Self Hosting, Cloud & Testing Environment",
         tags: ["Design-Infrastructure", "DevOps Engineer", "2021"],
-        year: "2021"
+        year: "2021",
+        link: "https://homepage.fleeforezz.site"
     }
 ];

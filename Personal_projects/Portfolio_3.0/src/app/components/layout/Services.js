@@ -39,9 +39,8 @@ export default function Services() {
                             Web Development
                         </h2>
                         <p className="text-[#9e9c98] text-[1.35rem] mt-[30px]">
-                            Optimizing software delivery, improving infrastructure scalability and
-                            reliability, fostering collaboration, and driving innovation to deliver
-                            value. I am eager to tackle the evolving challenges in this field.
+                            I excel at creating responsive, user-friendly websites and web applications,
+                            leveraging modern frameworks and best practices to deliver impactful digital solutions.
                         </p>
                         <div className="flex gap-[2rem] mt-[35px] mb-[15px]">
                             <span className="text-[#787169] text-[1.6rem] font-medium">
@@ -92,16 +91,16 @@ export default function Services() {
                             CI/CD Pipelines
                         </h2>
                         <p className="text-[#9e9c98] text-[1.4rem] mt-[30px]">
-                            Optimizing software delivery, improving infrastructure scalability and
-                            reliability, fostering collaboration, and driving innovation to deliver
-                            value. I am eager to tackle the evolving challenges in this field.
+                            Extensive experience designing and implementing CI/CD pipelines
+                            to automate build, test, and deployment processes, ensuring fast
+                            and reliable software delivery.
                         </p>
                         <div className="flex gap-[2rem] mt-[35px] mb-[15px]">
                             <span className="text-[#787169] text-[1.6rem] font-medium">
                                 01
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Consistent & validated codebase
+                                Deliver high-quality software quickly
                             </p>
                         </div>
 
@@ -112,7 +111,7 @@ export default function Services() {
                                 02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Scalability
+                                Consistent & validated codebase
                             </p>
                         </div>
 
@@ -123,7 +122,7 @@ export default function Services() {
                                 03
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Deliver high-quality software quickly
+                                Scalability
                             </p>
                         </div>
                     </div>
@@ -145,24 +144,13 @@ export default function Services() {
                             Interact With Servers
                         </h2>
                         <p className="text-[#9e9c98] text-[1.4rem] mt-[30px]">
-                            Optimizing software delivery, improving infrastructure scalability and
-                            reliability, fostering collaboration, and driving innovation to deliver
-                            value. I am eager to tackle the evolving challenges in this field.
+                            Strong expertise in interacting with servers, managing configurations,
+                            deploying applications, and ensuring seamless communication between
+                            client and server systems.
                         </p>
                         <div className="flex gap-[2rem] mt-[35px] mb-[15px]">
                             <span className="text-[#787169] text-[1.6rem] font-medium">
                                 01
-                            </span>
-                            <p className="text-[#d1d1c7] text-[2rem] font-semibold">
-                                Automation
-                            </p>
-                        </div>
-
-                        <div className="p-[0.5px] bg-[#3a3733]"></div>
-
-                        <div className="flex gap-[2rem] mt-[15px] mb-[15px]">
-                            <span className="text-[#787169] text-[1.6rem] font-medium">
-                                02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
                                 Design Infrastructure
@@ -173,10 +161,21 @@ export default function Services() {
 
                         <div className="flex gap-[2rem] mt-[15px] mb-[15px]">
                             <span className="text-[#787169] text-[1.6rem] font-medium">
-                                03
+                                02
                             </span>
                             <p className="text-[#d1d1c7] text-[2rem] font-semibold">
                                 Maintenance
+                            </p>
+                        </div>
+
+                        <div className="p-[0.5px] bg-[#3a3733]"></div>
+
+                        <div className="flex gap-[2rem] mt-[15px] mb-[15px]">
+                            <span className="text-[#787169] text-[1.6rem] font-medium">
+                                03
+                            </span>
+                            <p className="text-[#d1d1c7] text-[2rem] font-semibold">
+                                Automation
                             </p>
                         </div>
                     </div>

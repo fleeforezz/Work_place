@@ -12,12 +12,9 @@ export default function DigitalBox() {
                 </div>
                 <div className="col-span-4 col-start-8 relative flex items-center">
                     <p className="text-[1.2vw]">
-                        Optimizing software delivery, <br></br>
-                        improving infrastructure scalability <br></br>
-                        and reliability, fostering collaboration, <br></br>
-                        and driving innovation to deliver <br></br>
-                        value. I am eager to tackle the <br></br>
-                        evolving challenges in this field. <br></br>
+                        The tools I use enable me to transform ideas into reality by 
+                        providing the necessary frameworks, platforms, and technologies 
+                        to design, develop, test, and deploy innovative solutions efficiently and effectively.
                     </p>
                     <p className="absolute bottom-0 right-0 text-[--title] uppercase">
                         (Digital Box)
@@ -102,7 +99,7 @@ export default function DigitalBox() {
 
             </div>
 
-            <Image src={"/earth.png"} width={800} height={800} alt="earth" className="absolute -z-10 top-[30%] left-[30%]"/>
+            <Image src={"/earth.png"} width={800} height={800} alt="earth" className="absolute -z-10 top-[30%] left-[30%]" />
 
         </section>
     )
