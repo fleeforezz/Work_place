@@ -27,9 +27,9 @@ pipeline {
         IMAGE_BETA_TAG = "beta"
 
         // Server info
-        SERVER_USERNAME = "nhat"
-        SERVER_IP = "10.0.1.32"
-        SERVER_CONNECTION = "${SERVER_USERNAME}" + " " + "${SERVER_IP}"
+        // SERVER_USERNAME = "nhat"
+        // SERVER_IP = "10.0.1.32"
+        // SERVER_CONNECTION = "${SERVER_USERNAME}" + " " + "${SERVER_IP}"
     }
 
     stages {
