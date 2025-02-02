@@ -2,6 +2,7 @@ package com.jso.demo.service;
 
 import com.jso.demo.dto.request.UserCreationRequest;
 import com.jso.demo.dto.request.UserUpdateRequest;
+import com.jso.demo.dto.respone.UserResponse;
 import com.jso.demo.entity.User;
 import com.jso.demo.exception.AppException;
 import com.jso.demo.exception.ErrorCode;
@@ -33,20 +34,18 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User getUser(String id) {
-        return userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+    public UserResponse getUser(String id) {
+        return userMapper.toUserResponse(userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found")));
     }
 
-    public User updateUser(String userId, UserUpdateRequest request) {
-        User user = getUser(userId);
+    public UserResponse updateUser(String userId, UserUpdateRequest request) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new RuntimeException("User not found"));
 
-        user.setPassword(request.getPassword());
-        user.setFirstname(request.getFirstname());
-        user.setLastname(request.getLastname());
-        user.setBirthday(request.getBirthday());
+        userMapper.updateUser(user, request);
 
-        return userRepository.save(user);
+        return userMapper.toUserResponse(userRepository.save(user));
     }
 
     public void deleteUser(String userId) {

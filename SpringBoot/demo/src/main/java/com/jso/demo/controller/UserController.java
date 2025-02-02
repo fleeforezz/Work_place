@@ -3,6 +3,7 @@ package com.jso.demo.controller;
 import com.jso.demo.dto.request.ApiResponse;
 import com.jso.demo.dto.request.UserCreationRequest;
 import com.jso.demo.dto.request.UserUpdateRequest;
+import com.jso.demo.dto.respone.UserResponse;
 import com.jso.demo.entity.User;
 import com.jso.demo.service.UserService;
 import jakarta.validation.Valid;
@@ -30,12 +31,12 @@ public class UserController {
     }
 
     @GetMapping("/{userId}")
-    User getUser(@PathVariable String userId) {
+    UserResponse getUser(@PathVariable String userId) {
         return userService.getUser(userId);
     }
 
     @PutMapping("/{userId}")
-    User updateUser(@PathVariable String userId, @RequestBody UserUpdateRequest request) {
+    UserResponse updateUser(@PathVariable String userId, @RequestBody UserUpdateRequest request) {
         return userService.updateUser(userId, request);
     }
 

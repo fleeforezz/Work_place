@@ -5,6 +5,6 @@ server:
 
 spring:
   datasource:
-    url: "jdbc:mysql://localhost:53702/identity_service"
+    url: "jdbc:mysql://localhost:50378/identity_service"
     username: root
     password: 0822863716

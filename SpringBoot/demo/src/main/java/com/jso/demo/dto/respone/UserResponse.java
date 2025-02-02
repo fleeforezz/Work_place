@@ -1,4 +1,4 @@
-package com.jso.demo.dto.request;
+package com.jso.demo.dto.respone;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserUpdateRequest {
+public class UserResponse {
     String password;
     String firstname;
     String lastname;
